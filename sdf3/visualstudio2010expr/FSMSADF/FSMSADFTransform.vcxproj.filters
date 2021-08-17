@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\auto_concurrency">
+      <UniqueIdentifier>{d8720f87-04b6-471d-b5d8-de5e5edfd3b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\worst_case">
+      <UniqueIdentifier>{bf28c43a-9d9a-4aa8-a186-556830988bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\auto_concurrency">
+      <UniqueIdentifier>{18d229bb-85f0-4c6b-b043-f4e3a72dbbd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\worst_case">
+      <UniqueIdentifier>{8857c926-fa44-4b78-b73f-0a351e2882a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\model-static-order">
+      <UniqueIdentifier>{b3f5d139-4bd4-4c43-8110-503092352f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\model-static-order">
+      <UniqueIdentifier>{3df3651b-21a6-4486-8cfe-155a3cd7073f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fsmsadf\transform\auto-concurrency\auto-concurrency.cc">
+      <Filter>Source Files\auto_concurrency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\transform\worst-case\worst-case.cc">
+      <Filter>Source Files\worst_case</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\transform\model-static-order\hsdf-bambha.cc">
+      <Filter>Source Files\model-static-order</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fsmsadf\transform\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\transform\auto-concurrency\auto-concurrency.h">
+      <Filter>Header Files\auto_concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\transform\worst-case\worst-case.h">
+      <Filter>Header Files\worst_case</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\transform\model-static-order\hsdf-bambha.h">
+      <Filter>Header Files\model-static-order</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

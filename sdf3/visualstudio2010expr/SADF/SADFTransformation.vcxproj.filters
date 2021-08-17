@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\timing">
+      <UniqueIdentifier>{408492de-f11c-4c35-8403-8934d2dcef5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdf">
+      <UniqueIdentifier>{5f6f2be7-98d9-4354-8585-f3f213124314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenario">
+      <UniqueIdentifier>{1b506104-4004-4635-80cb-eb1118e878b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\csdf">
+      <UniqueIdentifier>{8ec18539-4530-4c3b-b05c-65849acbbd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\scenario">
+      <UniqueIdentifier>{26bc4e1b-b734-4722-8721-2d6a6eb1fc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sdf">
+      <UniqueIdentifier>{a14a3686-0fad-422d-9883-20800c376c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\timing">
+      <UniqueIdentifier>{93c1a8a1-2f30-4724-ae71-8f2fb87ceef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\csdf">
+      <UniqueIdentifier>{385430dc-78f2-4244-a921-2a9f519ae199}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sadf\transformation\timing\sadf_timing.cc">
+      <Filter>Source Files\timing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\transformation\sdf\sadf2sdf.cc">
+      <Filter>Source Files\sdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\transformation\sdf\sdf2sadf.cc">
+      <Filter>Source Files\sdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\transformation\scenario\sadf_collection.cc">
+      <Filter>Source Files\scenario</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\transformation\scenario\sadf_fix_scenario.cc">
+      <Filter>Source Files\scenario</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\transformation\csdf\csdf2sadf.cc">
+      <Filter>Source Files\csdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\transformation\csdf\sadf2csdf.cc">
+      <Filter>Source Files\csdf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sadf\transformation\scenario\sadf_collection.h">
+      <Filter>Header Files\scenario</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\transformation\scenario\sadf_fix_scenario.h">
+      <Filter>Header Files\scenario</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\transformation\sdf\sadf2sdf.h">
+      <Filter>Header Files\sdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\transformation\sdf\sdf2sadf.h">
+      <Filter>Header Files\sdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\transformation\timing\sadf_timing.h">
+      <Filter>Header Files\timing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\transformation\csdf\csdf2sadf.h">
+      <Filter>Header Files\csdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\transformation\csdf\sadf2csdf.h">
+      <Filter>Header Files\csdf</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

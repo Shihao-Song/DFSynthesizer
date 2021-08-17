@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sdf3 type='fsmsadf' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    xmlns='uri:sdf3' version='1.0' 
+    xsi:schemaLocation='uri:sdf3 http://www.es.ele.tue.nl/sdf3/xsd/fsmsadf.xsd'>
+    <applicationGraph name='mp3decoder'>
+        <fsmsadf>
+          <scenariograph name='alpha' type='scenariograph'>
+            <actor name="P" type="P" repetitions="1">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outQ" type="out" rate="1"></port>
+              <port name="inQ" type="in" rate="1"></port>
+            </actor>
+            <actor name="Q" type="Q" repetitions="1">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="0"></port>
+            </actor>
+            <actor name="R" type="R" repetitions="0">
+              <port name="inQ" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+              <port name="inR" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+            <channel name="PQ" srcActor="P" srcPort="outQ" dstActor="Q" dstPort="inP" initialTokens="0" finalTokens="0"></channel>
+            <channel name="QP" srcActor="Q" srcPort="outP" dstActor="P" dstPort="inQ" initialTokens="1" persistentTokenNames="t2" finalTokens="1" persistentFinalTokenNames="t2"></channel>
+            <channel name="QR" srcActor="Q" srcPort="outR" dstActor="R" dstPort="inQ" initialTokens="0" finalTokens="0"></channel>
+            <channel name="RR" srcActor="R" srcPort="outR" dstActor="R" dstPort="inR" initialTokens="1" persistentTokenNames="t4" finalTokens="1" persistentFinalTokenNames="t4"></channel>
+          </scenariograph>
+          <scenariograph name='beta' type='scenariograph'>
+            <actor name="P" type="P" repetitions="1">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outQ" type="out" rate="1"></port>
+              <port name="inQ" type="in" rate="1"></port>
+            </actor>
+            <actor name="Q" type="Q" repetitions="1">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+            </actor>
+            <actor name="R" type="R" repetitions="0">
+              <port name="inQ" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+              <port name="inR" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+            <channel name="PQ" srcActor="P" srcPort="outQ" dstActor="Q" dstPort="inP" initialTokens="0" finalTokens="0"></channel>
+            <channel name="QP" srcActor="Q" srcPort="outP" dstActor="P" dstPort="inQ" initialTokens="1" persistentTokenNames="t2" finalTokens="1" persistentFinalTokenNames="t2"></channel>
+            <channel name="QR" srcActor="Q" srcPort="outR" dstActor="R" dstPort="inQ" initialTokens="0" finalTokens="1" persistentFinalTokenNames="t3"></channel>
+            <channel name="RR" srcActor="R" srcPort="outR" dstActor="R" dstPort="inR" initialTokens="1" persistentTokenNames="t4" finalTokens="1" persistentFinalTokenNames="t4"></channel>
+          </scenariograph>
+          <scenariograph name='gamma' type='scenariograph'>
+            <actor name="P" type="P" repetitions="0">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outQ" type="out" rate="1"></port>
+              <port name="inQ" type="in" rate="1"></port>
+            </actor>
+            <actor name="Q" type="Q" repetitions="0">
+              <port name="outP" type="out" rate="0"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+            </actor>
+            <actor name="R" type="R" repetitions="1">
+              <port name="inQ" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+              <port name="inR" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+            <channel name="PQ" srcActor="P" srcPort="outQ" dstActor="Q" dstPort="inP" initialTokens="0" finalTokens="0"></channel>
+            <channel name="QP" srcActor="Q" srcPort="outP" dstActor="P" dstPort="inQ" initialTokens="1" persistentTokenNames="t2" finalTokens="1" persistentFinalTokenNames="t2"></channel>
+            <channel name="QR" srcActor="Q" srcPort="outR" dstActor="R" dstPort="inQ" initialTokens="1" persistentTokenNames="t3" finalTokens="0"></channel>
+            <channel name="RR" srcActor="R" srcPort="outR" dstActor="R" dstPort="inR" initialTokens="1" persistentTokenNames="t4" finalTokens="1" persistentFinalTokenNames="t4"></channel>
+          </scenariograph>
+          <scenariograph name='delta' type='scenariograph'>
+            <actor name="P" type="P" repetitions="0">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outQ" type="out" rate="1"></port>
+              <port name="inQ" type="in" rate="1"></port>
+            </actor>
+            <actor name="Q" type="Q" repetitions="0">
+              <port name="outP" type="out" rate="0"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+            </actor>
+            <actor name="R" type="R" repetitions="1">
+              <port name="inQ" type="in" rate="0"></port>
+              <port name="outR" type="out" rate="1"></port>
+              <port name="inR" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+            <channel name="PQ" srcActor="P" srcPort="outQ" dstActor="Q" dstPort="inP" initialTokens="0" finalTokens="0"></channel>
+            <channel name="QP" srcActor="Q" srcPort="outP" dstActor="P" dstPort="inQ" initialTokens="1" persistentTokenNames="t2" finalTokens="1" persistentFinalTokenNames="t2"></channel>
+            <channel name="QR" srcActor="Q" srcPort="outR" dstActor="R" dstPort="inQ" initialTokens="0" finalTokens="0"></channel>
+            <channel name="RR" srcActor="R" srcPort="outR" dstActor="R" dstPort="inR" initialTokens="1" persistentTokenNames="t4" finalTokens="1" persistentFinalTokenNames="t4"></channel>
+          </scenariograph>
+          <scenariograph name='epsilon' type='scenariograph'>
+            <actor name="P" type="P" repetitions="0">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outQ" type="out" rate="1"></port>
+              <port name="inQ" type="in" rate="1"></port>
+            </actor>
+            <actor name="Q" type="Q" repetitions="0">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+            </actor>
+            <actor name="R" type="R" repetitions="0">
+              <port name="inQ" type="in" rate="1"></port>
+              <port name="outR" type="out" rate="1"></port>
+              <port name="inR" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+            <channel name="PQ" srcActor="P" srcPort="outQ" dstActor="Q" dstPort="inP" initialTokens="0" finalTokens="0"></channel>
+            <channel name="QP" srcActor="Q" srcPort="outP" dstActor="P" dstPort="inQ" initialTokens="1" persistentTokenNames="t2" finalTokens="1" persistentFinalTokenNames="t2"></channel>
+            <channel name="QR" srcActor="Q" srcPort="outR" dstActor="R" dstPort="inQ" initialTokens="0" finalTokens="0"></channel>
+            <channel name="RR" srcActor="R" srcPort="outR" dstActor="R" dstPort="inR" initialTokens="1" persistentTokenNames="t4" finalTokens="1" persistentFinalTokenNames="t4"></channel>
+          </scenariograph>
+        </fsmsadf>
+        <fsmsadfProperties>
+            <defaultProperties>
+              <actorProperties actor="P">
+                <processor type="model" default="true">
+                  <executionTime time="2"></executionTime>
+                </processor>
+              </actorProperties>
+              <actorProperties actor="Q">
+                <processor type="model" default="true">
+                  <executionTime time="2"></executionTime>
+                </processor>
+              </actorProperties>
+              <actorProperties actor="R">
+                <processor type="model" default="true">
+                  <executionTime time="2"></executionTime>
+                </processor>
+              </actorProperties>
+              <channelProperties channel='PP'>
+                <tokenSize sz='1'/>
+              </channelProperties>
+              <channelProperties channel='PQ'>
+                <tokenSize sz='1'/>
+              </channelProperties>
+              <channelProperties channel='QP'>
+                <tokenSize sz='1'/>
+              </channelProperties>
+              <channelProperties channel='QR'>
+                <tokenSize sz='1'/>
+              </channelProperties>
+              <channelProperties channel='RR'>
+                <tokenSize sz='1'/>
+              </channelProperties>
+            </defaultProperties>
+            <scenarios>
+              <scenario name='alpha' graph='alpha' reward='0'/>
+              <scenario name='beta' graph='beta' reward='0'>
+                  <actorProperties actor="Q">
+                    <processor type="model" default="true">
+                      <executionTime time="3"></executionTime>
+                    </processor>
+                  </actorProperties>
+                </scenario>
+              <scenario name='gamma' graph='gamma' reward='1'/>
+              <scenario name='delta' graph='delta' reward='1'>
+                <actorProperties actor="R">
+                  <processor type="model" default="true">
+                    <executionTime time="3"></executionTime>
+                  </processor>
+                </actorProperties>
+              </scenario>
+              <scenario name='epsilon' graph='epsilon' reward='0'/>
+            </scenarios>
+            <graphProperties>
+                <timeConstraints>
+                    <throughput>1.0</throughput> <!-- arbitrary for now -->
+                </timeConstraints>
+            </graphProperties>
+        </fsmsadfProperties>
+        <fsm initialstate='q1'>
+          <state name='q1' scenario='alpha'>
+            <transition destination='q2'/>
+          </state>
+          <state name='q2' scenario='alpha'>
+            <transition destination='q3'/>
+          </state>
+          <state name='q3' scenario='beta'>
+              <transition destination='q4'/>
+            </state>
+          <state name='q4' scenario='gamma'>
+            <transition destination='q5'/>
+            <transition destination='q8'/>
+          </state>
+          <state name='q5' scenario='delta'>
+            <transition destination='q6'/>
+            <transition destination='q8'/>
+          </state>
+          <state name='q6' scenario='delta'>
+            <transition destination='q7'/>
+            <transition destination='q8'/>
+          </state>
+          <state name='q7' scenario='delta'>
+            <transition destination='q8'/>
+          </state>
+          <state name='q8' scenario='epsilon'>
+            <transition destination='q1'/>
+            <transition destination='q2'/>
+            <transition destination='q3'/>
+          </state>
+        </fsm>
+    </applicationGraph>
+</sdf3>
+

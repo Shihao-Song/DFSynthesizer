@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\flow">
+      <UniqueIdentifier>{d9735a38-3e6d-4af9-a322-680e992339cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform_binding">
+      <UniqueIdentifier>{18bfe323-cc3c-45c7-8762-3486c482e8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform_graph">
+      <UniqueIdentifier>{8fc6470f-59e7-4766-8040-b9a5fcb1e064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scheduling">
+      <UniqueIdentifier>{2d186ae3-aaa2-458d-910f-c669d404120c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scheduling\earliest_deadline_first">
+      <UniqueIdentifier>{0fe21aca-f311-400d-886e-cc4e125a7c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scheduling\static_order">
+      <UniqueIdentifier>{662efc79-7608-4149-af98-2be7059c2f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\flow">
+      <UniqueIdentifier>{e070280c-6787-4980-b84d-8b08b09cef18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform_binding">
+      <UniqueIdentifier>{20242e37-0733-4511-bb81-aedc51d02e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform_graph">
+      <UniqueIdentifier>{54bfd98d-b8ae-4b09-b7f5-12d65037292d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scheduling">
+      <UniqueIdentifier>{66c4f3e1-a515-482a-a507-e8b59c618ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scheduling\earliest_deadline_first">
+      <UniqueIdentifier>{2d7f5b2b-0ce7-471c-a8c4-80642f0678b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scheduling\static_order">
+      <UniqueIdentifier>{46d4ca15-15b5-442a-8bf9-1915656c6751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\base_platform">
+      <UniqueIdentifier>{f662f079-4204-49e2-91cb-4ee824b109aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\base_platform\base">
+      <UniqueIdentifier>{bb7e2b35-9309-4522-a03c-c4621d432ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\base_platform\binding_aware_graph">
+      <UniqueIdentifier>{1efebca8-8514-41aa-8240-733d01b8e97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\base_platform\memory">
+      <UniqueIdentifier>{20d99813-0b6d-412b-b84b-48f886849ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\base_platform\tile">
+      <UniqueIdentifier>{591e82f2-9700-499b-8301-fb56da842418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\virtual_platform">
+      <UniqueIdentifier>{dd1e97ea-c208-4806-ba26-dfb42a1fc89a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\compsoc_platform">
+      <UniqueIdentifier>{ac423801-c9e6-4d8d-8508-600923b20401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\base_platform">
+      <UniqueIdentifier>{dd3ca726-2aff-4415-978f-6c7e68e0c962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\base_platform\base">
+      <UniqueIdentifier>{26fea438-980f-403f-ad83-12a7e05a61b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\base_platform\binding_aware_graph">
+      <UniqueIdentifier>{fd6f1769-c994-4e36-b5d9-447c8b4832bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\base_platform\memory">
+      <UniqueIdentifier>{bae16125-ee93-4dd3-8969-1459986d9912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\base_platform\tile">
+      <UniqueIdentifier>{09cfee43-5d10-4740-be7d-5023fc17e267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\compsoc_platform">
+      <UniqueIdentifier>{27d66701-8245-4f2a-a5f6-a901c32a5170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\virtual_platform">
+      <UniqueIdentifier>{9b67deb1-e2ef-4df2-8648-a6e318765f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\base_platform\conversion">
+      <UniqueIdentifier>{b9525ce1-fd08-4115-91fd-43aa71fc8c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\base_platform\conversion">
+      <UniqueIdentifier>{131cdc23-6afc-4802-aa77-1d950a98062d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\compsoc_platform\base">
+      <UniqueIdentifier>{a8070300-37aa-4c2f-b430-4c45b0f11058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\compsoc_platform\binding_aware_graph">
+      <UniqueIdentifier>{aca9c652-ddd0-49ba-9b6e-b2e4fedce6df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\compsoc_platform\memory">
+      <UniqueIdentifier>{88161121-34b5-410c-8e3e-4beff64d78cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\compsoc_platform\conversion">
+      <UniqueIdentifier>{73a6d1ad-8cf0-4106-8b68-54abd860fea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\compsoc_platform\tile">
+      <UniqueIdentifier>{847a527c-1d3f-461f-9696-d750a96d6e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\virtual_platform\base">
+      <UniqueIdentifier>{7beaffe5-f512-48ad-b0d7-7badf378c1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\virtual_platform\binding_aware_graph">
+      <UniqueIdentifier>{b9c31fc1-5eaa-4b4d-900a-07107a0aa592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\virtual_platform\memory">
+      <UniqueIdentifier>{3b41399e-b06e-4a04-84d8-999db7ffb936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\virtual_platform\conversion">
+      <UniqueIdentifier>{fe165a4d-6fd1-4405-b761-72eb1edbe673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\virtual_platform\tile">
+      <UniqueIdentifier>{a094f5a1-dc5e-48e5-923f-60e9dca80b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\compsoc_platform\base">
+      <UniqueIdentifier>{7bad3a1c-5105-4cca-8cf1-d18ee619a52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\compsoc_platform\binding_aware_graph">
+      <UniqueIdentifier>{59ed5dd8-f0c9-4940-914d-7b5bd3ab62aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\compsoc_platform\memory">
+      <UniqueIdentifier>{1a90f26a-2ace-4519-b7ee-314188fb86ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\compsoc_platform\conversion">
+      <UniqueIdentifier>{8c044a1a-2078-4a07-9f24-090e6f425b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\compsoc_platform\tile">
+      <UniqueIdentifier>{44b5ca27-a733-48f4-bf9e-42400c6696a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\virtual_platform\base">
+      <UniqueIdentifier>{20ee3c8a-514d-4c3b-b943-a1cdb6c1a422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\virtual_platform\binding_aware_graph">
+      <UniqueIdentifier>{2c74352d-bb13-46d9-9e34-963fd1f381dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\virtual_platform\memory">
+      <UniqueIdentifier>{4de1b02b-6b18-4c95-88a7-046c03da5119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\virtual_platform\conversion">
+      <UniqueIdentifier>{c16b85f6-81c1-4ae3-b170-26c98db22de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow\virtual_platform\tile">
+      <UniqueIdentifier>{fdf4ea13-d536-46db-b921-4f7b09202859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\mamps_platform">
+      <UniqueIdentifier>{d2e0bf67-0712-405f-8ced-132e69d39446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\mamps_platform\base">
+      <UniqueIdentifier>{e60e8e2f-02bc-4b6a-acfd-5524b08034e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\mamps_platform\conversion">
+      <UniqueIdentifier>{fc2a6b59-3a1c-416a-abcd-88e53be49d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\mamps_platform\tile">
+      <UniqueIdentifier>{372e1820-768b-4bbc-b0fc-6dfecb2f699c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\mamps_platform\binding_aware_graph">
+      <UniqueIdentifier>{001f1d6c-740b-41a1-ad04-995afaa995e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow\mamps_platform\memory">
+      <UniqueIdentifier>{454bf148-8bec-4702-9831-573813a02ced}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\connection.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\constraint.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\graph.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\memory.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\networkinterface.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\processor.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\tile.cc">
+      <Filter>Source Files\platform_binding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\connection.cc">
+      <Filter>Source Files\platform_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\graph.cc">
+      <Filter>Source Files\platform_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\memory.cc">
+      <Filter>Source Files\platform_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\networkinterface.cc">
+      <Filter>Source Files\platform_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\processor.cc">
+      <Filter>Source Files\platform_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\tile.cc">
+      <Filter>Source Files\platform_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\edf.cc">
+      <Filter>Source Files\scheduling\earliest_deadline_first</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\precedence_graph.cc">
+      <Filter>Source Files\scheduling\earliest_deadline_first</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\scheduling\static_order\static_order_schedule.cc">
+      <Filter>Source Files\scheduling\static_order</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\output_conversion.cc">
+      <Filter>Source Files\flow\base_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\input_conversion.cc">
+      <Filter>Source Files\flow\base_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\base\flow.cc">
+      <Filter>Source Files\flow\compsoc_platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\binding_aware_graph\binding_aware_graph.cc">
+      <Filter>Source Files\flow\compsoc_platform\binding_aware_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\memory\memory.cc">
+      <Filter>Source Files\flow\compsoc_platform\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\output_conversion.cc">
+      <Filter>Source Files\flow\compsoc_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\helper.cc">
+      <Filter>Source Files\flow\compsoc_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\input_conversion.cc">
+      <Filter>Source Files\flow\compsoc_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\graph_binding.cc">
+      <Filter>Source Files\flow\compsoc_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\binding.cc">
+      <Filter>Source Files\flow\compsoc_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\base\flow.cc">
+      <Filter>Source Files\flow\virtual_platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\binding_aware_graph\binding_aware_graph.cc">
+      <Filter>Source Files\flow\virtual_platform\binding_aware_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\memory\memory.cc">
+      <Filter>Source Files\flow\virtual_platform\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\output_conversion.cc">
+      <Filter>Source Files\flow\virtual_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\input_conversion.cc">
+      <Filter>Source Files\flow\virtual_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\graph_binding.cc">
+      <Filter>Source Files\flow\virtual_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\binding.cc">
+      <Filter>Source Files\flow\virtual_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\base\tile.cc">
+      <Filter>Source Files\flow\base_platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\base\flow.cc">
+      <Filter>Source Files\flow\base_platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\base\memory.cc">
+      <Filter>Source Files\flow\base_platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\binding_aware_graph\binding_aware_graph.cc">
+      <Filter>Source Files\flow\base_platform\binding_aware_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\memory\memory.cc">
+      <Filter>Source Files\flow\base_platform\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\tile\graph_binding.cc">
+      <Filter>Source Files\flow\base_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\tile\binding.cc">
+      <Filter>Source Files\flow\base_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\memory\memory.cc">
+      <Filter>Source Files\flow\compsoc_platform\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\base\flow.cc">
+      <Filter>Source Files\flow\mamps_platform\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\input_conversion.cc">
+      <Filter>Source Files\flow\mamps_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\output_conversion.cc">
+      <Filter>Source Files\flow\mamps_platform\conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\binding.cc">
+      <Filter>Source Files\flow\mamps_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\graph_binding.cc">
+      <Filter>Source Files\flow\mamps_platform\tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\binding_aware_graph\binding_aware_graph.cc">
+      <Filter>Source Files\flow\mamps_platform\binding_aware_graph</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\binding_aware_graph\binding_aware_graph.h">
+      <Filter>Header Files\flow\base_platform\binding_aware_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\base\flow.h">
+      <Filter>Header Files\flow\base_platform\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\memory\memory.h">
+      <Filter>Header Files\flow\base_platform\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\tile\binding.h">
+      <Filter>Header Files\flow\base_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\tile\graph_binding.h">
+      <Filter>Header Files\flow\base_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\connection.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\constraint.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\graph.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\memory.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\networkinterface.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\processor.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\tile.h">
+      <Filter>Header Files\platform_binding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\connection.h">
+      <Filter>Header Files\platform_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\graph.h">
+      <Filter>Header Files\platform_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\memory.h">
+      <Filter>Header Files\platform_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\networkinterface.h">
+      <Filter>Header Files\platform_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\processor.h">
+      <Filter>Header Files\platform_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\tile.h">
+      <Filter>Header Files\platform_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\edf.h">
+      <Filter>Header Files\scheduling\earliest_deadline_first</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\precedence_graph.h">
+      <Filter>Header Files\scheduling\earliest_deadline_first</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\scheduling\static_order\static_order_schedule.h">
+      <Filter>Header Files\scheduling\static_order</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\input_conversion.h">
+      <Filter>Header Files\flow\base_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\output_conversion.h">
+      <Filter>Header Files\flow\base_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\base\flow.h">
+      <Filter>Header Files\flow\compsoc_platform\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\binding_aware_graph\binding_aware_graph.h">
+      <Filter>Header Files\flow\compsoc_platform\binding_aware_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\memory\memory.h">
+      <Filter>Header Files\flow\compsoc_platform\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\output_conversion.h">
+      <Filter>Header Files\flow\compsoc_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\helper.h">
+      <Filter>Header Files\flow\compsoc_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\input_conversion.h">
+      <Filter>Header Files\flow\compsoc_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\graph_binding.h">
+      <Filter>Header Files\flow\compsoc_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\binding.h">
+      <Filter>Header Files\flow\compsoc_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\base\flow.h">
+      <Filter>Header Files\flow\virtual_platform\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\binding_aware_graph\binding_aware_graph.h">
+      <Filter>Header Files\flow\virtual_platform\binding_aware_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\memory\memory.h">
+      <Filter>Header Files\flow\virtual_platform\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\output_conversion.h">
+      <Filter>Header Files\flow\virtual_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\input_conversion.h">
+      <Filter>Header Files\flow\virtual_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\graph_binding.h">
+      <Filter>Header Files\flow\virtual_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\binding.h">
+      <Filter>Header Files\flow\virtual_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\base\flow.h">
+      <Filter>Source Files\flow\mamps_platform\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\input_conversion.h">
+      <Filter>Source Files\flow\mamps_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\output_conversion.h">
+      <Filter>Source Files\flow\mamps_platform\conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\binding.h">
+      <Filter>Source Files\flow\mamps_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\graph_binding.h">
+      <Filter>Source Files\flow\mamps_platform\tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\binding_aware_graph\binding_aware_graph.h">
+      <Filter>Source Files\flow\mamps_platform\binding_aware_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\memory\memory.h">
+      <Filter>Source Files\flow\mamps_platform\memory</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

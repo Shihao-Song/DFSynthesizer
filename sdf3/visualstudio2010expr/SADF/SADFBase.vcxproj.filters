@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{137ce099-b9ad-4a8c-832b-53615475c214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base\parser">
+      <UniqueIdentifier>{69bda047-eb61-4016-9604-bd91ee7f29d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base\sadf">
+      <UniqueIdentifier>{5d12288f-b5d8-48d7-81e5-f7cbb65e3c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base\tps">
+      <UniqueIdentifier>{c243d10c-d983-4bb7-8f5c-fdaa4d94a55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{1c7d60c5-db86-40ca-9199-449fe7c6261a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base\parser">
+      <UniqueIdentifier>{2b699489-bf4d-45c3-be8d-f10fa0c4c2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base\sadf">
+      <UniqueIdentifier>{e9313e90-6553-4946-9973-82375ce8e069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base\tps">
+      <UniqueIdentifier>{717cc7b2-0c5d-4737-b581-0255f65a7915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="schema">
+      <UniqueIdentifier>{707dd393-8cce-4b76-92af-a73fe32edc65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sadf\base\parser\sadf_parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\sadf\sadf_channel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\sadf\sadf_component.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\sadf\sadf_graph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\sadf\sadf_markovchain.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\sadf\sadf_process.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\sadf\sadf_profile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_channel_status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_configuration.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_control_status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_detector_status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_kernel_status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_tps.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\base\tps\sadf_transition.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sadf\base\parser\sadf_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\sadf\sadf_channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\sadf\sadf_communication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\y..\..\sadf\base\sadf\sadf_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\sadf\sadf_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\y..\..\sadf\base\sadf\sadf_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\sadf\sadf_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\y..\..\sadf\base\sadf\sadf_markovchain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\sadf\sadf_process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\y..\..\sadf\base\sadf\sadf_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\sadf\sadf_scenario.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_channel_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_control_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_detector_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_kernel_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_tps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\base\tps\sadf_transition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\..\sadf\xsd\sdf3-sadf.xsd">
+      <Filter>schema</Filter>
+    </Xsd>
+  </ItemGroup>
+</Project>

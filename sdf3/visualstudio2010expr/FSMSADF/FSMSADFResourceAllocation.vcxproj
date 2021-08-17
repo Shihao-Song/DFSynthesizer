@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E030BB5-C976-4F01-B3BF-6319BCB8F671}</ProjectGuid>
+    <RootNamespace>FSMSADFResourceAllocation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\build\$(Configuration)\Windows\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\build\$(Configuration)\Windows\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\base\flow.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\base\memory.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/base_flow_memory.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/base_flow_memory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\base\tile.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\binding_aware_graph\binding_aware_graph.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\input_conversion.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\output_conversion.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\memory\memory.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\tile\binding.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\base_platform\tile\graph_binding.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\base\flow.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_flow.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_flow.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\binding_aware_graph\binding_aware_graph.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_binding_aware_graph.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_binding_aware_graph.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\helper.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_helper.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\input_conversion.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_input_conversion.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_input_conversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\output_conversion.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_output_conversion.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_output_conversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\memory\memory.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_flow_memory.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_flow_memory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\memory\memory.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_memory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\binding.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_binding.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_binding.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\graph_binding.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/compsoc_graph_binding.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/compsoc_graph_binding.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\base\flow.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/mamps_flow_flow.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/mamps_base_flow.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\binding_aware_graph\binding_aware_graph.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/mamps_binding_aware_graph_binding_aware_graph.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/mamps_binding_aware_graph_binding_aware_graph.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\input_conversion.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/mamps_conversion_input_conversion.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/mamps_conversion_input_conversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\output_conversion.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/mamps_conversion_output_conversion.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/mamps_conversion_output_conversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\binding.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/mamps_tile_binding.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/mamps_tile_binding.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\graph_binding.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/mamps_tile_graph_binding.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/mamps_tile_graph_binding.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\base\flow.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_flow.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/virtual_flow.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\binding_aware_graph\binding_aware_graph.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_binding_aware_graph.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/virtual_binding_aware_graph.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\input_conversion.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_input_conversion.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/virtual_input_conversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\output_conversion.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_output_conversion.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/virtual_output_conversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\memory\memory.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_memory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\binding.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_binding.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/virtual_binding.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\graph_binding.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/virtual_graph_binding.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/virtual_graph_binding.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\connection.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_platfbind_connection.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\constraint.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\graph.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_graph.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_graph.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\memory.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_memory.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_memory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\networkinterface.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_networkinterface.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_networkinterface.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\processor.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_processor.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_processor.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_binding\tile.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_tile.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resalloc_platfbind_tile.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\connection.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resall_platfgraph_connection.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resall_platfgraph_connection.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\graph.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\memory.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_resalloc_platfgraph_memory.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_resalloc_platfgraph_memory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\networkinterface.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\processor.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\platform_graph\tile.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)fsmsadf_platfgraph_tile.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)fsmsadf_platfgraph_tile.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\edf.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\precedence_graph.cc" />
+    <ClCompile Include="..\..\fsmsadf\resource_allocation\scheduling\static_order\static_order_schedule.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\binding_aware_graph\binding_aware_graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\base\flow.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\input_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\base_platform\conversion\output_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\base\flow.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\binding_aware_graph\binding_aware_graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\helper.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\input_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\conversion\output_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\memory\memory.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\compsoc_platform\tile\graph_binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\base\flow.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\binding_aware_graph\binding_aware_graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\input_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\conversion\output_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\memory\memory.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\mamps_platform\tile\graph_binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\memory\memory.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\tile\binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\tile\graph_binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\base\flow.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\binding_aware_graph\binding_aware_graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\input_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\conversion\output_conversion.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\memory\memory.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\flow\virtual_platform\tile\graph_binding.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\connection.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\constraint.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\memory.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\networkinterface.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\processor.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_binding\tile.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\connection.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\memory.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\networkinterface.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\processor.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\platform_graph\tile.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\edf.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\scheduling\earliest_deadline_first\precedence_graph.h" />
+    <ClInclude Include="..\..\fsmsadf\resource_allocation\scheduling\static_order\static_order_schedule.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

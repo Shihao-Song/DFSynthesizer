@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\sdf\output\buffer_throughput\buffy.cc">
+      <Filter>Source Files\buffer_throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\output\buffer_throughput\buffy_autoconc.cc">
+      <Filter>Source Files\buffer_throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\output\dot\dot.cc">
+      <Filter>Source Files\dot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\output\hapi\hapi.cc">
+      <Filter>Source Files\hapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\output\html\html.cc">
+      <Filter>Source Files\html</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\output\schedule\schedule.cc">
+      <Filter>Source Files\schedule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\output\xml\xml.cc">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sdf\output\buffer_throughput\buffy.h">
+      <Filter>Header Files\buffer_throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\output\dot\dot.h">
+      <Filter>Header Files\dot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\output\hapi\hapi.h">
+      <Filter>Header Files\hapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\output\html\html.h">
+      <Filter>Header Files\html</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\output\schedule\schedule.h">
+      <Filter>Header Files\schedule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\output\xml\xml.h">
+      <Filter>Header Files\xml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c8141c22-f709-41ae-99ba-cfb6bc9c7052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{368b1652-4e7d-450a-afb0-c5f76ce1b20a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\buffer_throughput">
+      <UniqueIdentifier>{2d181a8c-9d04-4fb7-aeb7-1559c68ae0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\buffer_throughput">
+      <UniqueIdentifier>{48b9539d-0a67-443b-9975-4f121d4614a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dot">
+      <UniqueIdentifier>{2f2e919a-8d71-4872-992b-172b0e70db29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dot">
+      <UniqueIdentifier>{f7ac2088-407b-41f5-b37a-b9c7428be532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hapi">
+      <UniqueIdentifier>{1c2fd7b7-5abc-4498-8bde-04643449ed2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hapi">
+      <UniqueIdentifier>{381d1ff4-9ca8-472a-8bf8-c187ec6d6874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\html">
+      <UniqueIdentifier>{ca9ca9cd-bd37-4b22-9951-c7146456745e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\html">
+      <UniqueIdentifier>{e5e05b8f-ef2b-412f-962c-e58191e7d819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\schedule">
+      <UniqueIdentifier>{567937cd-68e8-4cbd-95af-0cb2fe162d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\schedule">
+      <UniqueIdentifier>{7c09e73e-182f-4ef7-8d9c-51ab427bb302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xml">
+      <UniqueIdentifier>{63a6f9a0-c6f0-46b6-9eba-63e5f495c3bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{ec3301ae-2f58-4a10-920c-f6d1e04fb3cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

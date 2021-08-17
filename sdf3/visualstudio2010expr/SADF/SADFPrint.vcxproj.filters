@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\dot">
+      <UniqueIdentifier>{586468a6-1be4-478c-b031-1d80ccb76ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\html">
+      <UniqueIdentifier>{d1f8001b-79ae-43ac-8b99-37a113c7fff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\poosl">
+      <UniqueIdentifier>{35eefc37-ae61-4ed8-a89f-39c6e01ec2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{f72680be-ee30-4842-9074-8033c71dacf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\dot">
+      <UniqueIdentifier>{9eeb8061-6cc0-44a3-bdef-347aac159b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\html">
+      <UniqueIdentifier>{6070c3cd-8570-4da9-8504-5d20b2144311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\poosl">
+      <UniqueIdentifier>{67512814-e404-4243-9543-74a5cf93c6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xml">
+      <UniqueIdentifier>{81f55f5a-cebd-431e-8ff9-aad759357eb9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sadf\print\dot\sadf2dot.cc">
+      <Filter>Source Files\dot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\print\html\sadf2html.cc">
+      <Filter>Source Files\html</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\print\poosl\sadf2poosl.cc">
+      <Filter>Source Files\poosl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\print\poosl\sadf2poosl_cluster.cc">
+      <Filter>Source Files\poosl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\print\poosl\sadf2poosl_data.cc">
+      <Filter>Source Files\poosl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\print\poosl\sadf2poosl_process.cc">
+      <Filter>Source Files\poosl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\print\xml\sadf2xml.cc">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sadf\print\dot\sadf2dot.h">
+      <Filter>Header Files\dot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\print\html\sadf2html.h">
+      <Filter>Header Files\html</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\print\poosl\sadf2poosl.h">
+      <Filter>Header Files\poosl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\print\poosl\sadf2poosl_cluster.h">
+      <Filter>Header Files\poosl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\print\poosl\sadf2poosl_data.h">
+      <Filter>Header Files\poosl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\print\poosl\sadf2poosl_process.h">
+      <Filter>Header Files\poosl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\print\xml\sadf2xml.h">
+      <Filter>Header Files\xml</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

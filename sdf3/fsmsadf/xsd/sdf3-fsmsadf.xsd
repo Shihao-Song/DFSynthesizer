@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="uri:sdf3" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="uri:sdf3" elementFormDefault="qualified">
+  <xs:element name="sdf3">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="applicationGraph" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="architectureGraph" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="mapping" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+      <xs:attribute name="version" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- 
+        applicationGraph
+  -->
+  <xs:element name="applicationGraph">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="fsmsadf" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="fsmsadfProperties" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="fsm" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fsmsadf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="scenariograph" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="actor" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="port" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                        <xs:attribute name="type" type="xs:string" use="required"/>
+                        <xs:attribute name="rate" type="xs:decimal" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="type" type="xs:string"/>
+                  <xs:attribute name="size" type="xs:decimal"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="channel" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="srcActor" type="xs:string"/>
+                  <xs:attribute name="srcPort" type="xs:string"/>
+                  <xs:attribute name="dstActor" type="xs:string"/>
+                  <xs:attribute name="dstPort" type="xs:string"/>
+                  <xs:attribute name="initialTokens" type="xs:decimal"/>
+                  <xs:attribute name="size" type="xs:decimal"/>
+                  <xs:attribute name="nrConnections" type="xs:decimal"/>
+                  <xs:attribute name="inBandwidth" type="xs:double"/>
+                  <xs:attribute name="outBandwidth" type="xs:double"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fsmsadfProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="defaultProperties" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="scenarios" maxOccurs="1" minOccurs="1"/>
+        <xs:element ref="graphProperties" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="actorProperties" maxOccurs="unbounded" minOccurs="1"/>
+        <xs:element ref="channelProperties" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scenarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="scenario" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="actorProperties" maxOccurs="unbounded" minOccurs="0"/>
+              <xs:element ref="channelProperties" maxOccurs="unbounded" minOccurs="0"/>
+              <xs:element ref="storageDistributions" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="graph" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="actorProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="processor" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="port" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="optional"/>
+            <xs:attribute name="rate" type="xs:decimal" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="actor" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="processor">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element name="executionTime" minOccurs="1" maxOccurs="1">
+            <xs:complexType>
+              <xs:attribute name="time" type="xs:decimal" use="required"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element ref="memory" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element ref="arbitration"/>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="type" type="xs:string"/>
+      <xs:attribute name="default" type="xs:string"/>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="timeslice" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="memory">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="stateSize" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element name="actor" maxOccurs="unbounded" minOccurs="0">
+            <xs:complexType>
+              <xs:attribute name="name" type="xs:string" use="required"/>
+              <xs:attribute name="processorType" type="xs:string" use="required"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="channel" maxOccurs="unbounded" minOccurs="0">
+            <xs:complexType>
+              <xs:attribute name="name" type="xs:string" use="required"/>
+              <xs:attribute name="in" type="xs:boolean" use="required"/>
+              <xs:attribute name="out" type="xs:boolean" use="required"/>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="size" type="xs:decimal"/>
+      <xs:attribute name="type" type="memoryType"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stateSize">
+    <xs:complexType>
+      <xs:attribute name="max" type="xs:decimal" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storageDistributions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="storageDistribution" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storageDistribution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="channel" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="sz" type="xs:decimal" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="sz" type="xs:decimal" use="required"/>
+      <xs:attribute name="thr" type="xs:double" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="channelProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="bufferSize" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="tokenSize" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="bandwidth" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="latency" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="channel" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bufferSize">
+    <xs:complexType>
+      <xs:attribute name="src" type="xs:decimal" use="required"/>
+      <xs:attribute name="dst" type="xs:decimal" use="required"/>
+      <xs:attribute name="mem" type="xs:decimal" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tokenSize">
+    <xs:complexType>
+      <xs:attribute name="sz" type="xs:decimal" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bandwidth">
+    <xs:complexType>
+      <xs:attribute name="min" type="xs:double" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="latency">
+    <xs:complexType>
+      <xs:attribute name="min" type="xs:decimal" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="graphProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="timeConstraints" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="timeConstraints">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="throughput" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="throughput" type="xs:double"/>
+  <xs:element name="arbitration">
+    <xs:complexType>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+      <xs:attribute name="wheelsize" type="xs:decimal" use="required"/>
+      <xs:attribute name="contextSwitchOverhead" type="xs:decimal" use="required"/>
+      <xs:attribute name="slotLength" type="xs:decimal" use="optional"/>
+      <xs:attribute name="preemptive" type="xs:boolean" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Finite state machine -->
+  <xs:element name="fsm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="state" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="transition" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="destination" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="scenario" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="initialstate" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--
+        Architecture Graph
+        -->
+  <xs:element name="architectureGraph">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tile" type="ArchTile" maxOccurs="unbounded" minOccurs="1"/>
+        <xs:element name="connection" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="srcTile" type="xs:string"/>
+            <xs:attribute name="srcNetworkInterface" type="xs:string"/>
+            <xs:attribute name="dstTile" type="xs:string"/>
+            <xs:attribute name="dstNetworkInterface" type="xs:string"/>
+            <xs:attribute name="delay" type="xs:decimal"/>
+            <xs:attribute name="latency" type="xs:decimal"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArchTile">
+    <xs:sequence>
+      <xs:element ref="processor" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="memory" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element ref="networkInterface" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:element name="networkInterface">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="nrInConnections" type="xs:decimal"/>
+      <xs:attribute name="nrOutConnections" type="xs:decimal"/>
+      <xs:attribute name="inBandwidth" type="xs:double"/>
+      <xs:attribute name="outBandwidth" type="xs:double"/>
+    </xs:complexType>
+  </xs:element>
+  <!--
+        Mapping
+  -->
+  <xs:element name="mapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="scenario" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tile" type="MappingTile" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="connection" type="MappingConnection" minOccurs="0" maxOccurs="unbounded">
+             </xs:element>
+              <xs:element name="constraints" minOccurs="0" maxOccurs="1">
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="resourceUsage" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tile" type="MappingTile" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="connection" type="BaseClass" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="appGraph" type="xs:string"/>
+      <xs:attribute name="archGraph" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- 
+        tile used in the mapping
+  -->
+  <xs:complexType name="MappingTile">
+    <xs:sequence>
+      <xs:element name="processor" type="MappingProcessor" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="memory" type="MappingTileMemory" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="networkInterface" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="MappingProcessor">
+    <xs:sequence>
+      <xs:element name="actor" type="BaseClass" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="arbitration" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="schedule" minOccurs="0" maxOccurs="1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="state" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:attribute name="actor" type="xs:string" use="required"/>
+                      <xs:attribute name="startOfPeriodicRegime" type="xs:boolean" use="optional"/>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="timeslice" type="xs:decimal" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <!-- mapping/tile/memory -->
+  <xs:complexType name="MappingTileMemory">
+    <xs:complexContent>
+      <xs:extension base="BaseClass">
+        <xs:sequence>
+          <xs:element name="actor" type="MappingTileMemoryActor" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="channel" type="MappingTileMemoryChannel" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <!-- this one is used in the initial -->
+        <xs:attribute name="size" type="xs:decimal" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MappingTileMemoryActor">
+    <xs:complexContent>
+      <xs:extension base="BaseClass">
+        <xs:attribute name="processorType" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MappingTileMemoryChannel">
+    <xs:complexContent>
+      <xs:extension base="BaseClass">
+        <xs:attribute name="bufferType" type="bufferType" use="required"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!-- mapping/connection-->
+  <xs:complexType name="MappingConnection">
+    <xs:complexContent>
+      <xs:extension base="BaseClass">
+        <xs:sequence>
+          <xs:element name="channel" type="BaseClass" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!--
+    base class, complex class with name attribute.
+  -->
+  <xs:complexType name="BaseClass">
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+  <!--
+        Type defenitions
+   -->
+  <!-- The type of memory, sdf3 now supports commin, commout, shared, instr and data -->
+  <xs:simpleType name="memoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="commout"/>
+      <xs:enumeration value="commin"/>
+      <xs:enumeration value="data"/>
+      <xs:enumeration value="instr"/>
+      <xs:enumeration value="shared"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bufferType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="dst"/>
+      <xs:enumeration value="src"/>
+      <xs:enumeration value="shared"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

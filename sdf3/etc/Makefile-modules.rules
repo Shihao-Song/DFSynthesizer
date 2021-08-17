@@ -1,0 +1,85 @@
+#
+#   TU Eindhoven
+#   Eindhoven, The Netherlands
+#
+#   Author          :   Sander Stuijk (sander@ics.ele.tue.nl)
+#
+#   Date            :   March 29, 2002
+#   
+
+PROG_REL_LIBS = $(addprefix $(LIB_DIR_REL)/, $(PROG_REL_LIB))
+PROG_REL_BINS = $(addprefix $(BIN_DIR_REL)/, $(PROG_REL_BIN))
+
+# Create full name (inc. directory) for shared library target
+MODULE_LIB_A = $(addprefix $(LIB_DIR)/, $(addsuffix .$(LIBA), \
+                   $(basename $(MODULE_SH_LIB))))
+MODULE_LIB_SO = $(addprefix $(LIB_DIR)/, $(MODULE_SH_LIB))
+
+# Set flag to create position independent code when creating shared library
+ifneq "$(strip $(PROG_REL_SH_LIB))" ""
+    CXXFLAGS += -fPIC
+endif
+
+# Add includes / libraries for libxml2
+INCLUDES += $(LIBXML2_INC)
+EXT_LIBS_DIRS += $(LIBXML2_LIB)
+EXT_LIBS += $(LIBXML2)
+EXT_LIBS += boost_regex
+
+# insert dependency info
+ifneq ("$(DEPS)","")
+	-include $(DEPS:%=$(DEP_DIR)/%)
+endif
+
+# External user libraries needed for linking. These libraries are located in
+# the LIB_DIR directory
+USR_LIBS = $(subst lib,,$(basename $(USR_LIB_EXT)))
+USR_LIBS_DIRS += $(LIB_DIR)
+USR_LIBS_DEP = $(addprefix $(LIB_DIR)/, $(USR_LIB_EXT))
+
+# Set flag to create position independent code when creating shared library
+ifneq "$(strip $(PROG_SH_LIB))" ""
+    CXXFLAGS += -fPIC
+endif
+
+.PHONY: $(TOOLS)
+
+#-------------------------------------------------------------------------------
+# Rules (standard)
+#-------------------------------------------------------------------------------
+
+all:	$(COMPONENTS) $(MODULE_LIB_SO) $(TOOLS)
+
+guard:
+	@if [ -z "$(SDF3ROOT)" ]; then \
+		echo "Error: variable 'SDF3ROOT' not set";\
+		exit 1; fi
+		
+#-------------------------------------------------------------------------------
+# Rules (Shared library from components)
+#-------------------------------------------------------------------------------
+
+$(COMPONENTS): guard
+		@echo "";
+		@echo "### Module "$(MODULE) "-" $@;
+		@cd $@ && $(MAKE) $(MAKEFLAGS) all && cd .. ;
+    
+$(TOOLS): $(COMPONENTS) 
+		@echo "";
+		@echo "### Module "$(MODULE) "-" $@;
+		@cd $@ && $(MAKE) $(MAKEFLAGS) all && cd .. ;
+
+# Link object files to shared library
+$(MODULE_LIB_SO): $(MODULE_LIB_A) 
+		@echo ""
+		@echo "### Module lib "$(MODULE);
+		@echo Creating shared library1 $(notdir $@);
+		@$(CXX) -shared $(LDFLAGS) -o $@ \
+		-Wl,-export-all-symbols \
+		-Wl,-enable-auto-import \
+		-Wl,-whole-archive $^ \
+		-Wl,-no-whole-archive\
+		$(addprefix -L,$(USR_LIBS_DIRS)) $(addprefix -l,$(USR_LIBS))\
+		$(addprefix -L,$(EXT_LIBS_DIRS)) $(addprefix -l,$(EXT_LIBS))
+		@echo Adding library $(notdir $@) to distribution;
+		@cp $@ $(subst $(LIB_DIR),$(LIB_DIR_REL), $@);

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\sdf_to_csdf">
+      <UniqueIdentifier>{b1c7f399-573f-43c4-a691-bc3e694b98d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sdf_to_csdf">
+      <UniqueIdentifier>{5b1c66bb-3d59-4c07-9efd-07c63fb10d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\csdf_to_wc_fsm_sadf">
+      <UniqueIdentifier>{d4a3c3d7-fcef-40c0-bf34-2893dd287da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\csdf_to_wc_fsm_sadf">
+      <UniqueIdentifier>{26a9214b-ea0d-41e1-9422-db6d8848b37a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\csdf\transform\to_sdf\sdftocsdf.cc">
+      <Filter>Source Files\sdf_to_csdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\transform\to_wc_fsm_sadf\csdftowcfsmsadf.cc">
+      <Filter>Source Files\csdf_to_wc_fsm_sadf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\csdf\transform\to_sdf\sdftocsdf.h">
+      <Filter>Header Files\sdf_to_csdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\transform\to_wc_fsm_sadf\csdftowcfsmsadf.h">
+      <Filter>Header Files\csdf_to_wc_fsm_sadf</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

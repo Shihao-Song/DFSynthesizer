@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{dc49b556-570c-423a-9b48-f8c5d68220a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\maxplus">
+      <UniqueIdentifier>{608039a5-ad60-442e-939c-0caaa65b363b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\throughput">
+      <UniqueIdentifier>{84a28623-9cfc-4571-8967-d08b20988559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{dbc1fa7f-5a4a-4b31-af19-93ded4504836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\maxplus">
+      <UniqueIdentifier>{11fbec8d-5e16-4b5c-bee9-9324ca7df0ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\throughput">
+      <UniqueIdentifier>{3199f83f-e3b5-4106-9731-9b643ad61fe7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fsmsadf\analysis\base\repetition_vector.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\maxplus\mpexplore.cc">
+      <Filter>Source Files\maxplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\throughput\fsm_ref_schedule.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\throughput\fsm_scenario_transitions.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\throughput\maxplusautomaton.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\throughput\scenariograph.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\throughput\statespace.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\analysis\throughput\thrutils.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fsmsadf\analysis\analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\base\repetition_vector.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\maxplus\mpexplore.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\fsm_ref_schedule.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\fsm_scenario_transitions.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\maxplusautomaton.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\scenariograph.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\statespace.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\throughput.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\analysis\throughput\thrutils.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

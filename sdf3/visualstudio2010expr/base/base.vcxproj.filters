@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\exception">
+      <UniqueIdentifier>{3fe318a7-af5b-44d5-918a-0aa092147a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\log">
+      <UniqueIdentifier>{76409472-ebe5-42db-9353-f1ca456601c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\string">
+      <UniqueIdentifier>{cea61ad9-1ae3-4cbe-a5a1-b304bb77ac50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tempfile">
+      <UniqueIdentifier>{60438b23-dcf0-4889-8515-5a89b19437d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\time">
+      <UniqueIdentifier>{a5230166-6e92-42fe-a9bf-309046c074cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{a81d83bb-52b9-41db-80b2-b39b9e0b5c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\matrix">
+      <UniqueIdentifier>{11b1475f-4f74-46fe-b3ab-2bcca0d5a3d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fsm">
+      <UniqueIdentifier>{5443e279-05ad-4e2f-9f4f-a5b36a4e3034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\maxplus">
+      <UniqueIdentifier>{b3a1feef-0781-44a2-ba41-e357d0ac2ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\exception">
+      <UniqueIdentifier>{178d34f5-cd76-4ebc-8740-c3344fb77ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fraction">
+      <UniqueIdentifier>{00a4ae20-4bc9-4c06-991c-6b414feab46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\log">
+      <UniqueIdentifier>{2e98dfc2-e04e-4f10-a908-a708733a8bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{c6868691-f069-4733-92e2-2475793565ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\random">
+      <UniqueIdentifier>{fb3df015-be0c-4f83-a266-41193243bb10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sequence">
+      <UniqueIdentifier>{989f82d4-04ce-401f-a231-b9aaab0d2e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sort">
+      <UniqueIdentifier>{82d996db-eb3a-4a14-bd72-782238759d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\string">
+      <UniqueIdentifier>{e1c49910-81bf-47d1-a353-2dfdd58641b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tempfile">
+      <UniqueIdentifier>{1dde3cea-9076-495f-a8d7-599923463ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\time">
+      <UniqueIdentifier>{985b68c5-8692-4945-9642-daf88f24c256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xml">
+      <UniqueIdentifier>{86e22bfd-73e1-4ae8-82ac-c697d2ec3673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\matrix">
+      <UniqueIdentifier>{8f7b6e03-80be-449c-ac9e-65228f59edda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fsm">
+      <UniqueIdentifier>{e82e2e63-6658-4529-82b6-2e28fb140779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\maxplus">
+      <UniqueIdentifier>{b913cb75-bc27-4fc7-beea-1163a5b331f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lookup">
+      <UniqueIdentifier>{a35edeb9-89db-4139-bd17-ea991394b4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shell">
+      <UniqueIdentifier>{f9817ce2-e892-4b38-9b74-809e82ab00ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shell">
+      <UniqueIdentifier>{d58bd9cd-b6b2-49c8-90a2-3f2898fe6277}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\base\exception\exception.cc">
+      <Filter>Source Files\exception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\log\log.cc">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\string\cstring.cc">
+      <Filter>Source Files\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\tempfile\tempfile.cc">
+      <Filter>Source Files\tempfile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\time\time.cc">
+      <Filter>Source Files\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\xml\xml.cc">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\matrix\matrix.cc">
+      <Filter>Source Files\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\fsm\fsm.cc">
+      <Filter>Source Files\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\maxplus\mpmatrix.cc">
+      <Filter>Source Files\maxplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\shell\shell.cc">
+      <Filter>Source Files\shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\shell\shellwin.cc">
+      <Filter>Source Files\shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\shell\dirs.cc">
+      <Filter>Source Files\shell</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\base\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\basic_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\exception\exception.h">
+      <Filter>Header Files\exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\fraction\fraction.h">
+      <Filter>Header Files\fraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\log\log.h">
+      <Filter>Header Files\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\math\cmath.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\random\random.h">
+      <Filter>Header Files\random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\sequence\sequence.h">
+      <Filter>Header Files\sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\sort\sort.h">
+      <Filter>Header Files\sort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\string\cstring.h">
+      <Filter>Header Files\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\tempfile\tempfile.h">
+      <Filter>Header Files\tempfile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\time\time.h">
+      <Filter>Header Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\xml\xml.h">
+      <Filter>Header Files\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\matrix\matrix.h">
+      <Filter>Header Files\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\fsm\fsm.h">
+      <Filter>Header Files\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\maxplus\maxplus.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\maxplus\mpmatrix.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\maxplus\mptype.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\lookup\clookup.h">
+      <Filter>Header Files\lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\shell\shellwin.h">
+      <Filter>Header Files\shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\shell\shell.h">
+      <Filter>Header Files\shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\shell\dirs.h">
+      <Filter>Header Files\shell</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sdf3 type='fsmsadf' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+    xmlns='uri:sdf3' version='1.0' 
+    xsi:schemaLocation='uri:sdf3 http://www.es.ele.tue.nl/sdf3/xsd/fsmsadf.xsd'>
+    <applicationGraph name='mp3decoder'>
+        <fsmsadf>
+          <scenariograph name='alpha' type='scenariograph'>
+            <actor name="P" type="P" repetitions="1">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+          </scenariograph>
+          <scenariograph name='beta' type='scenariograph'>
+            <actor name="P" type="P" repetitions="1">
+              <port name="outP" type="out" rate="1"></port>
+              <port name="inP" type="in" rate="1"></port>
+            </actor>
+            <channel name="PP" srcActor="P" srcPort="outP" dstActor="P" dstPort="inP" initialTokens="1" persistentTokenNames="t1" finalTokens="1" persistentFinalTokenNames="t1"></channel>
+          </scenariograph>
+        </fsmsadf>
+        <fsmsadfProperties>
+            <defaultProperties>
+              <actorProperties actor="P">
+                <processor type="model" default="true">
+                  <executionTime time="2"></executionTime>
+                </processor>
+              </actorProperties>
+              <channelProperties channel='PP'>
+                <tokenSize sz='1'/>
+              </channelProperties>
+            </defaultProperties>
+            <scenarios>
+              <scenario name='alpha' graph='alpha' reward='0'/>
+              <scenario name='beta' graph='beta' reward='1'/>
+            </scenarios>
+            <graphProperties>
+                <timeConstraints>
+                    <throughput>1.0</throughput> <!-- arbitrary for now -->
+                </timeConstraints>
+            </graphProperties>
+        </fsmsadfProperties>
+        <fsm initialstate='q1'>
+          <state name='q1' scenario='alpha'>
+            <transition destination='q2'/>
+          </state>
+          <state name='q2' scenario='beta'>
+            <transition destination='q1'/>
+            <transition destination='q2'/>
+          </state>
+        </fsm>
+    </applicationGraph>
+</sdf3>
+

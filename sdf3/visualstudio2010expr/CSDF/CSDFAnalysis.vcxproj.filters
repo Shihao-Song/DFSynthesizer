@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\buffersizing">
+      <UniqueIdentifier>{788a9c8c-1657-4ab9-8e1c-04f1b1d2b13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\throughput">
+      <UniqueIdentifier>{f8f00663-f189-4b56-8b8b-75d37b3ae8c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\buffersizing">
+      <UniqueIdentifier>{d5ee703f-f64a-45d3-a3d3-b1161a512d85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\throughput">
+      <UniqueIdentifier>{8caa2cbf-ad3a-47b9-877e-3027076b98c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\csdf\analysis\buffersizing\buffer.cc">
+      <Filter>Source Files\buffersizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\analysis\throughput\selftimed_throughput.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\csdf\analysis\analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\basic_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\csdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\analysis\buffersizing\buffer.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\analysis\buffersizing\buffersizing.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\analysis\throughput\selftimed_throughput.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\analysis\throughput\throughput.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

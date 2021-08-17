@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\algo">
+      <UniqueIdentifier>{a5b6a32b-4e02-47a4-a908-1b582d5978f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\timed">
+      <UniqueIdentifier>{fedda415-a37c-4386-bdbd-52c4565d41d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\untimed">
+      <UniqueIdentifier>{db16c557-d254-434e-8f73-387879c1d822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\algo">
+      <UniqueIdentifier>{0bcfa764-bc3b-4308-a36f-efab09da1053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\timed">
+      <UniqueIdentifier>{1cddc5eb-6d26-4d94-b0c2-ee45a62557b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\untimed">
+      <UniqueIdentifier>{c7a22579-c5d1-4267-8f44-8adbdd6f180f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="schema">
+      <UniqueIdentifier>{23458f48-29fa-40db-818a-9521871cb531}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\csdf\base\algo\components.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\algo\dfs.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\timed\actor.cc">
+      <Filter>Source Files\timed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\timed\channel.cc">
+      <Filter>Source Files\timed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\timed\graph.cc">
+      <Filter>Source Files\timed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\untimed\actor.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\untimed\channel.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\untimed\component.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\untimed\graph.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\base\untimed\port.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\csdf\base\algo\components.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\algo\dfs.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\timed\actor.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\timed\channel.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\timed\graph.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\timed\timed_types.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\untimed\actor.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\untimed\channel.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\untimed\component.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\untimed\graph.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\untimed\port.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\base\untimed\rate.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\..\csdf\xsd\sdf3-csdf.xsd">
+      <Filter>schema</Filter>
+    </Xsd>
+  </ItemGroup>
+</Project>

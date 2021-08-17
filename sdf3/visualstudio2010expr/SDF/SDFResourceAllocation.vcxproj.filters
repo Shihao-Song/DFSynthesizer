@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\sdf\resource_allocation\tile_allocation\binding.cc">
+      <Filter>Source Files\tile_allocation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\binding.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\binding_aware_sdfg\binding_aware_sdfg.cc">
+      <Filter>Source Files\binding_aware_sdfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\classic.cc">
+      <Filter>Source Files\noc_allocation\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\component.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\connection.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\flow\constraint.cc">
+      <Filter>Source Files\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\flow\flow.cc">
+      <Filter>Source Files\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\graph.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\greedy.cc">
+      <Filter>Source Files\noc_allocation\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\interconnect_graph.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\knowledge.cc">
+      <Filter>Source Files\noc_allocation\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\link.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\scheduling\list_scheduler.cc">
+      <Filter>Source Files\scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\tile_allocation\loadbalance.cc">
+      <Filter>Source Files\tile_allocation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\flow\memory.cc">
+      <Filter>Source Files\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\memory.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\message.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\networkinterface.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\flow\noc.cc">
+      <Filter>Source Files\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\noc_scheduler.cc">
+      <Filter>Source Files\noc_allocation\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\mapping\nocmapping.cc">
+      <Filter>Source Files\noc_allocation\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\scheduling\priority_list_scheduler.cc">
+      <Filter>Source Files\scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\problem.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\processor.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\random.cc">
+      <Filter>Source Files\noc_allocation\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\ripup.cc">
+      <Filter>Source Files\noc_allocation\scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\route.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\schedulingentity.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\noc_allocation\problem\slot.cc">
+      <Filter>Source Files\noc_allocation\problem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\scheduling\static_order_schedule.cc">
+      <Filter>Source Files\scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\scheduling\static_periodic_scheduler.cc">
+      <Filter>Source Files\scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\scheduling\static_periodic_scheduler_chao.cc">
+      <Filter>Source Files\scheduling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\tile.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\flow\tile.cc">
+      <Filter>Source Files\flow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\resource_allocation\mpsoc_arch\xml.cc">
+      <Filter>Source Files\mpsoc_arch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\arch_types.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\binding.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\tile_allocation\binding.h">
+      <Filter>Header Files\tile_allocation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\binding_aware_sdfg\binding_aware_sdfg.h">
+      <Filter>Header Files\binding_aware_sdfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\classic.h">
+      <Filter>Header Files\noc_allocation\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\component.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\connection.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\flow\flow.h">
+      <Filter>Header Files\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\graph.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\greedy.h">
+      <Filter>Header Files\noc_allocation\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\interconnect_graph.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\knowledge.h">
+      <Filter>Header Files\noc_allocation\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\link.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\scheduling\list_scheduler.h">
+      <Filter>Header Files\scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\tile_allocation\loadbalance.h">
+      <Filter>Header Files\tile_allocation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\memory.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\message.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\networkinterface.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\noc_scheduler.h">
+      <Filter>Header Files\noc_allocation\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\mapping\nocmapping.h">
+      <Filter>Header Files\noc_allocation\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\node.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\packet.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\scheduling\priority_list_scheduler.h">
+      <Filter>Header Files\scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\problem.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\processor.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\random.h">
+      <Filter>Header Files\noc_allocation\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\scheduler\ripup.h">
+      <Filter>Header Files\noc_allocation\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\route.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\scheduling\scheduling.h">
+      <Filter>Header Files\scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\schedulingentity.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\noc_allocation\problem\slot.h">
+      <Filter>Header Files\noc_allocation\problem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\scheduling\static_order_schedule.h">
+      <Filter>Header Files\scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\scheduling\static_periodic_scheduler.h">
+      <Filter>Header Files\scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\scheduling\static_periodic_scheduler_chao.h">
+      <Filter>Header Files\scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\tile.h">
+      <Filter>Header Files\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\flow\types.h">
+      <Filter>Header Files\flow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\resource_allocation\mpsoc_arch\xml.h">
+      <Filter>Header Files\mpsoc_arch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0ca7e10d-14f8-4728-9176-2d33779d7235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{71e8ba2f-b0f9-482a-b516-d80f809eed6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\binding_aware_sdfg">
+      <UniqueIdentifier>{538f8152-cc10-43ac-8616-bec8a8f9b57d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\binding_aware_sdfg">
+      <UniqueIdentifier>{658630a7-e6df-4a30-84a8-00b294b5ebc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flow">
+      <UniqueIdentifier>{17a5d285-b28a-49ed-8ed2-53b814385766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flow">
+      <UniqueIdentifier>{1630a4a8-fd54-4fef-ab8b-3f7431653550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mpsoc_arch">
+      <UniqueIdentifier>{f05af91a-808d-40cd-9d25-0fd563c869a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mpsoc_arch">
+      <UniqueIdentifier>{ce0d0d56-0996-4555-b3ee-faf086efcf31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\noc_allocation">
+      <UniqueIdentifier>{4f9c7344-d415-4d3f-82b5-e36fd0eebbf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\noc_allocation">
+      <UniqueIdentifier>{77917d59-dffb-4eff-91cc-e3c58cae7741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scheduling">
+      <UniqueIdentifier>{a969141b-4b18-4aa9-b07e-6caed04ad1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scheduling">
+      <UniqueIdentifier>{309c0dc7-7111-418e-aa6a-aba8c6085b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tile_allocation">
+      <UniqueIdentifier>{e1296b3c-940e-4957-9342-4b4955cc4052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tile_allocation">
+      <UniqueIdentifier>{f5529340-beda-4d0f-94d8-79a6b1fceedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\noc_allocation\scheduler">
+      <UniqueIdentifier>{7dc8e14d-e8e9-42af-96d9-97360ba14b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\noc_allocation\scheduler">
+      <UniqueIdentifier>{aa956ef9-cfca-444a-bbb3-e7936295791d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\noc_allocation\problem">
+      <UniqueIdentifier>{80b4d4fd-907d-4d0e-bc73-885350852578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\noc_allocation\problem">
+      <UniqueIdentifier>{a03bc79e-eb43-4eb9-9fe4-bb8d5be27bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\noc_allocation\mapping">
+      <UniqueIdentifier>{9ac42421-6b43-4f07-908e-363d9f656098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\noc_allocation\mapping">
+      <UniqueIdentifier>{a1518fe8-f726-4032-86ad-f0341d4d571a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

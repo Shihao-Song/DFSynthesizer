@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF278344-C4BE-4654-9FE7-FBFF301FC4BD}</ProjectGuid>
+    <RootNamespace>base</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\build\$(Configuration)\Windows\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\build\$(Configuration)\Windows\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories> $(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories> $(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\base\exception\exception.cc" />
+    <ClCompile Include="..\..\base\log\log.cc" />
+    <ClCompile Include="..\..\base\shell\dirs.cc" />
+    <ClCompile Include="..\..\base\shell\shell.cc" />
+    <ClCompile Include="..\..\base\shell\shellwin.cc" />
+    <ClCompile Include="..\..\base\string\cstring.cc" />
+    <ClCompile Include="..\..\base\tempfile\tempfile.cc" />
+    <ClCompile Include="..\..\base\time\time.cc" />
+    <ClCompile Include="..\..\base\xml\xml.cc" />
+    <ClCompile Include="..\..\base\matrix\matrix.cc" />
+    <ClCompile Include="..\..\base\fsm\fsm.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)bfsm.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\base\maxplus\mpmatrix.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\base\base.h" />
+    <ClInclude Include="..\..\base\basic_types.h" />
+    <ClInclude Include="..\..\base\exception\exception.h" />
+    <ClInclude Include="..\..\base\fraction\fraction.h" />
+    <ClInclude Include="..\..\base\log\log.h" />
+    <ClInclude Include="..\..\base\math\cmath.h" />
+    <ClInclude Include="..\..\base\random\random.h" />
+    <ClInclude Include="..\..\base\sequence\sequence.h" />
+    <ClInclude Include="..\..\base\shell\dirs.h" />
+    <ClInclude Include="..\..\base\shell\shell.h" />
+    <ClInclude Include="..\..\base\shell\shellwin.h" />
+    <ClInclude Include="..\..\base\sort\sort.h" />
+    <ClInclude Include="..\..\base\string\cstring.h" />
+    <ClInclude Include="..\..\base\tempfile\tempfile.h" />
+    <ClInclude Include="..\..\base\time\time.h" />
+    <ClInclude Include="..\..\base\xml\xml.h" />
+    <ClInclude Include="..\..\base\matrix\matrix.h" />
+    <ClInclude Include="..\..\base\fsm\fsm.h" />
+    <ClInclude Include="..\..\base\maxplus\maxplus.h" />
+    <ClInclude Include="..\..\base\maxplus\mpmatrix.h" />
+    <ClInclude Include="..\..\base\maxplus\mptype.h" />
+    <ClInclude Include="..\..\base\lookup\clookup.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

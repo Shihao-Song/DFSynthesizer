@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="sadf" version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="uri:sadf" xsi:schemaLocation="uri:sadf http://www.es.ele.tue.nl/sadf/sdf3-sadf.xsd">
+<sadf name="mpeg4_avc">
+
+<structure>
+  <kernel name="A"/>
+  <kernel name="B"/>
+  <kernel name="C"/>
+  <kernel name="D"/>
+  <channel name="A2B" source="A" destination="B" type="data"/>
+  <channel name="B2C" source="B" destination="C" type="data"/>
+  <channel name="C2D" source="C" destination="D" type="data"/>
+  <channel name="B2A" source="B" destination="A" type="data"/>
+  <channel name="C2B" source="C" destination="B" type="data"/>
+  <channel name="D2C" source="D" destination="C" type="data"/>
+</structure>
+
+<properties>
+  <kernel_properties kernel="A">
+    <scenario name="default">
+      <consume channel="B2A" tokens="1"/>
+      <produce channel="A2B" tokens="1"/>
+      <profile execution_time="1.858e-3"/>
+      <profile execution_time="4.788e-3"/>
+      <profile execution_time="6.055e-3"/>    
+    </scenario>
+  </kernel_properties>
+  <kernel_properties kernel="B">
+    <scenario name="default">
+      <consume channel="A2B" tokens="1"/>
+      <consume channel="C2B" tokens="1"/>
+      <produce channel="B2C" tokens="1"/>
+      <produce channel="B2A" tokens="1"/>
+      <profile execution_time="0.980e-3"/>
+    </scenario>
+  </kernel_properties>
+  <kernel_properties kernel="C">
+    <scenario name="default">
+      <consume channel="B2C" tokens="1"/>
+      <consume channel="D2C" tokens="1"/>
+      <produce channel="C2D" tokens="1"/>
+      <produce channel="C2B" tokens="1"/>
+      <profile execution_time="3.816e-3"/>
+    </scenario>
+  </kernel_properties>
+  <kernel_properties kernel="D">
+    <scenario name="default">
+      <consume channel="C2D" tokens="1"/>
+      <produce channel="D2C" tokens="1"/>
+      <profile execution_time="3.816e-3"/>
+    </scenario>
+  </kernel_properties>
+  <channel_properties channel="B2A" number_of_initial_tokens="1"/>
+  <channel_properties channel="C2B" number_of_initial_tokens="1"/>
+  <channel_properties channel="D2C" number_of_initial_tokens="1"/>
+</properties>
+
+</sadf>
+</sdf3>

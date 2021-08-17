@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\channel">
+      <UniqueIdentifier>{53bc82c8-2a14-419e-8749-4091e82da0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graph">
+      <UniqueIdentifier>{ad73ec56-f730-4c43-8baa-54058f86d287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\process">
+      <UniqueIdentifier>{59cf1e9b-99ff-47cc-baef-c94dcabfbf94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\schedulers">
+      <UniqueIdentifier>{16975539-36e2-4bd8-929b-bd5bcae4d404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\channel">
+      <UniqueIdentifier>{8a0bf107-245c-4f45-93c3-1abe43c06a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graph">
+      <UniqueIdentifier>{3f2db795-6c8f-4220-af4a-5c4626aa7e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\process">
+      <UniqueIdentifier>{977c0538-1ed5-4c7d-9711-1e4bf6d9f891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\schedulers">
+      <UniqueIdentifier>{49bc2d98-bb91-405a-aa9d-aaea2f98416f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sadf\analysis\channel\sadf_buffer_occupancy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\analysis\graph\sadf_state_space.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\analysis\process\sadf_deadline_miss.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\analysis\process\sadf_inter_firing_latency.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\analysis\process\sadf_response_delay.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\analysis\schedulers\sadf_asap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\analysis\schedulers\sadf_asap_reduced.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sadf\analysis\channel\sadf_buffer_occupancy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\analysis\graph\sadf_state_space.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\analysis\process\sadf_deadline_miss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\analysis\process\sadf_inter_firing_latency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\analysis\process\sadf_response_delay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\analysis\schedulers\sadf_asap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\analysis\schedulers\sadf_asap_reduced.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

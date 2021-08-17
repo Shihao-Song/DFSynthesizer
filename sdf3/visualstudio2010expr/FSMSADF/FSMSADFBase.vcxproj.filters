@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{2693fa01-f67f-48d3-a04c-44c9c4835192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{3f8fcb76-5984-42b5-a6f7-d1cd135e59bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="schema">
+      <UniqueIdentifier>{bfdd64a3-47de-4e7f-acb7-140b1ce2b948}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fsmsadf\base\actor.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\channel.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\component.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\fsm.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\graph.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\port.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\scenario.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fsmsadf\base\type.cc">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fsmsadf\fsmsadf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\actor.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\channel.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\component.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\fsm.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\graph.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\port.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\scenario.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fsmsadf\base\type.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\..\fsmsadf\xsd\sdf3-fsmsadf.xsd">
+      <Filter>schema</Filter>
+    </Xsd>
+  </ItemGroup>
+</Project>

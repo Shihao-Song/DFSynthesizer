@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\moc">
+      <UniqueIdentifier>{76fbe6ff-0522-4867-a7a4-1ef4f14add16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple">
+      <UniqueIdentifier>{6ad4d3eb-9859-453d-8df6-44265ee8485e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\consistency">
+      <UniqueIdentifier>{92e3b52e-db4e-4e33-990f-44c73f5d2eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\moc">
+      <UniqueIdentifier>{7b44cb67-5900-4f5e-b83c-78f773b937cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple">
+      <UniqueIdentifier>{8e470836-e77b-45ea-9355-72422d26e3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\consistency">
+      <UniqueIdentifier>{e7a08cb2-bbae-4edc-bbf9-05c247f57649}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sadf\verification\moc\sadf_moc.cc">
+      <Filter>Source Files\moc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\verification\simple\sadf_ergodic.cc">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\verification\simple\sadf_simple.cc">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sadf\verification\consistency\sadf_consistency.cc">
+      <Filter>Source Files\consistency</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sadf\verification\moc\sadf_moc.h">
+      <Filter>Header Files\moc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\verification\simple\sadf_ergodic.h">
+      <Filter>Header Files\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\verification\simple\sadf_simple.h">
+      <Filter>Header Files\simple</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sadf\verification\consistency\sadf_consistency.h">
+      <Filter>Header Files\consistency</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

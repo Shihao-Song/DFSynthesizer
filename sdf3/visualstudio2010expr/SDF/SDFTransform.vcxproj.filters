@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\sdf\transform\to_apg\apg.cc">
+      <Filter>Source Files\to_apg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\model\autoconc.cc">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\model\buffer_capacity_constrained.cc">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\model\buffersize.cc">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\hsdf\hsdf.cc">
+      <Filter>Source Files\hsdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\misc\reverse_channels.cc">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\to_apg\sdftoapg.cc">
+      <Filter>Source Files\to_apg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\transform\hsdf\unfold.cc">
+      <Filter>Source Files\hsdf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sdf\transform\to_apg\apg.h">
+      <Filter>Header Files\to_apg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\transform\model\autoconc.h">
+      <Filter>Header Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\transform\model\buffersize.h">
+      <Filter>Header Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\transform\hsdf\hsdf.h">
+      <Filter>Header Files\hsdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\transform\misc\reverse_channels.h">
+      <Filter>Header Files\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\transform\to_apg\sdftoapg.h">
+      <Filter>Header Files\to_apg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\transform\hsdf\unfold.h">
+      <Filter>Header Files\hsdf</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e015888e-f396-4eb2-8f6d-90cc41d52ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{486d6460-c10f-45a4-b02d-83885917b94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\to_apg">
+      <UniqueIdentifier>{28088180-3df0-489a-aa2e-034a267095de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\to_apg">
+      <UniqueIdentifier>{0e8950b0-e650-494a-8dca-d7e118060835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\model">
+      <UniqueIdentifier>{28baa535-b310-4409-8610-8e2861d01d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\model">
+      <UniqueIdentifier>{7af98dea-05b1-4ccb-8270-afb65b043325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hsdf">
+      <UniqueIdentifier>{8c0e45b7-78dc-4ef7-ae77-2e50b3507e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hsdf">
+      <UniqueIdentifier>{b886ac95-0107-4324-a04d-a6563cf8c7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\misc">
+      <UniqueIdentifier>{8da91b29-2571-472c-b217-9b047887c666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\misc">
+      <UniqueIdentifier>{c20e3a9c-154b-40e4-b641-5244dde16bf4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

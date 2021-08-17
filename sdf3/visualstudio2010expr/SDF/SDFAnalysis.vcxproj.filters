@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\sdf\analysis\buffersizing\bounded_buffer.cc">
+      <Filter>Source Files\buffersizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\buffersizing\buffer.cc">
+      <Filter>Source Files\buffersizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\buffersizing\buffer_ning_gao.cc">
+      <Filter>Source Files\buffersizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\buffersizing\buffer_capacity_constrained.cc">
+      <Filter>Source Files\buffersizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\token_communication\comm_trace.cc">
+      <Filter>Source Files\token_communication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\throughput\deadlock.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\dependency_graph\dependency_graph.cc">
+      <Filter>Source Files\dependency_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\mcm\mcmhoward.cc">
+      <Filter>Source Files\mcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\mcm\mcm.cc">
+      <Filter>Source Files\mcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\mcm\mcmdg.cc">
+      <Filter>Source Files\mcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\mcm\mcmgraph.cc">
+      <Filter>Source Files\mcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\mcm\mcmkarp.cc">
+      <Filter>Source Files\mcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\mcm\mcmyto.cc">
+      <Filter>Source Files\mcm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\latency\minimal.cc">
+      <Filter>Source Files\latency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\maxplus\mpdependencies.cc">
+      <Filter>Source Files\maxplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\maxplus\mpstorage.cc">
+      <Filter>Source Files\maxplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\maxplus\mpexplore.cc">
+      <Filter>Source Files\maxplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\latency\selftimed_minimal.cc">
+      <Filter>Source Files\latency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\latency\selftimed.cc">
+      <Filter>Source Files\latency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\throughput\selftimed_throughput.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\latency\single_processor_random_staticorder.cc">
+      <Filter>Source Files\latency</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\throughput\static_periodic_ning_gao.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\analysis\throughput\tdma_schedule.cc">
+      <Filter>Source Files\throughput</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sdf\analysis\analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\buffersizing\bounded_buffer.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\buffersizing\buffer.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\buffersizing\buffer_ning_gao.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\buffersizing\buffersizing.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\token_communication\comm_trace.h">
+      <Filter>Header Files\token_communication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\throughput\deadlock.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\dependency_graph\dependency_graph.h">
+      <Filter>Header Files\dependency_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\latency\latency.h">
+      <Filter>Header Files\latency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\mcm\mcm.h">
+      <Filter>Header Files\mcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\mcm\mcmgraph.h">
+      <Filter>Header Files\mcm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\latency\minimal.h">
+      <Filter>Header Files\latency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\maxplus\mpstorage.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\maxplus\mpdependencies.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\maxplus\mpexplore.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\maxplus\mpgenth_code.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\maxplus\mppredict.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\latency\selftimed.h">
+      <Filter>Header Files\latency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\latency\selftimed_minimal.h">
+      <Filter>Header Files\latency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\throughput\selftimed_throughput.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\latency\single_processor_random_staticorder.h">
+      <Filter>Header Files\latency</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\throughput\static_periodic_ning_gao.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\buffersizing\storage_distribution.h">
+      <Filter>Header Files\buffersizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\throughput\tdma_schedule.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\maxplus\testcsdf.h">
+      <Filter>Header Files\maxplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\throughput\throughput.h">
+      <Filter>Header Files\throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\analysis\mcm\mcmyto.h">
+      <Filter>Header Files\mcm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{55797395-a859-45d7-b119-5ce16a0685f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9329b580-3eb3-4fe7-8e05-e754be21aba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\buffersizing">
+      <UniqueIdentifier>{03f13063-3aec-4fba-8dd3-3d1450a48ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\buffersizing">
+      <UniqueIdentifier>{11e6515f-9335-4773-b881-c0af4c4d2d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\token_communication">
+      <UniqueIdentifier>{b3dfc66b-9792-4054-b097-8b7b10acc0cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\token_communication">
+      <UniqueIdentifier>{a2d63265-3040-4788-acb0-9b26e2145615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\throughput">
+      <UniqueIdentifier>{94c04476-429c-4592-8f63-b990f13a33f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\throughput">
+      <UniqueIdentifier>{f36bfc42-2fab-40c1-b322-9920d88b0835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dependency_graph">
+      <UniqueIdentifier>{248bd3cb-7c84-466f-9b1b-571dc9ead59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dependency_graph">
+      <UniqueIdentifier>{5d85395a-ee2c-4093-82f1-9bcbab09add2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\latency">
+      <UniqueIdentifier>{82d0cf49-a888-4adb-98ce-a4a95b4dd586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\latency">
+      <UniqueIdentifier>{27aa1f0a-8623-4090-837c-663beb5d96a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mcm">
+      <UniqueIdentifier>{92f4536a-dd12-4c4d-9439-00fd22bcdce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mcm">
+      <UniqueIdentifier>{67f2c0aa-1780-44cc-bc16-d305fa7fa7de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\maxplus">
+      <UniqueIdentifier>{41af83a5-164a-40a4-89dd-018209b75059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\maxplus">
+      <UniqueIdentifier>{fa72a86a-0670-48b0-ad08-a774629cf9ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

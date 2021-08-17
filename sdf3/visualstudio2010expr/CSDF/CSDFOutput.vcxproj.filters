@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\buffer_throughput">
+      <UniqueIdentifier>{c285c4a4-1c77-4556-bbef-4bf72a8344b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xml">
+      <UniqueIdentifier>{053b3371-81ff-4f15-815c-d40a63dc955a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\buffer_throughput">
+      <UniqueIdentifier>{bc00a099-d993-4c19-8e9b-c96ff585bf59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xml">
+      <UniqueIdentifier>{c48f3a94-ba3a-4858-a402-06057180fefd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\csdf\output\buffer_throughput\buffy.cc">
+      <Filter>Source Files\buffer_throughput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\csdf\output\xml\xml.cc">
+      <Filter>Source Files\xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\csdf\output\buffer_throughput\buffy.h">
+      <Filter>Header Files\buffer_throughput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csdf\output\xml\xml.h">
+      <Filter>Header Files\xml</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

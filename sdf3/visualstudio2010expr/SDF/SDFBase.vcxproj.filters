@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\timed">
+      <UniqueIdentifier>{e3b60cd0-e79a-426d-83d9-be7b50d69ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\untimed">
+      <UniqueIdentifier>{994f9ac1-0efc-43e9-bcd3-e5e67339b1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algo">
+      <UniqueIdentifier>{103a7d14-7ccb-4f3a-bb3b-8eb31deccc3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hsdf">
+      <UniqueIdentifier>{1a63765f-79a1-40f4-8321-256fbff9a1ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\timed">
+      <UniqueIdentifier>{3205a549-f706-4405-a89d-1b8002ba0ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\untimed">
+      <UniqueIdentifier>{3d9d8ec1-a5a5-431f-90b4-57d79d107229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\algo">
+      <UniqueIdentifier>{20fa44b8-3407-4b0d-9058-20cc28480acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hsdf">
+      <UniqueIdentifier>{780dfa04-0717-4647-9a7b-9f47be01f223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="schema">
+      <UniqueIdentifier>{afc5a117-973f-4329-9b9d-d67477ee075a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sdf\base\untimed\graph.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\untimed\actor.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\timed\actor.cc">
+      <Filter>Source Files\timed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\acyclic.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\timed\channel.cc">
+      <Filter>Source Files\timed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\untimed\channel.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\hsdf\check.cc">
+      <Filter>Source Files\hsdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\untimed\component.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\components.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\connected.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\cycle.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\dfs.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\graph.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\timed\graph.cc">
+      <Filter>Source Files\timed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\untimed\port.cc">
+      <Filter>Source Files\untimed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdf\base\algo\repetition_vector.cc">
+      <Filter>Source Files\algo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sdf\base\timed\actor.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\untimed\actor.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\acyclic.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\untimed\channel.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\timed\channel.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\hsdf\check.h">
+      <Filter>Header Files\hsdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\untimed\component.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\components.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\connected.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\cycle.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\dfs.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\graph.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\untimed\graph.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\timed\graph.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\untimed\port.h">
+      <Filter>Header Files\untimed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\algo\repetition_vector.h">
+      <Filter>Header Files\algo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\timed\simparam.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdf\base\timed\timed_types.h">
+      <Filter>Header Files\timed</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\..\sdf\xsd\sdf3-sdf.xsd">
+      <Filter>schema</Filter>
+    </Xsd>
+  </ItemGroup>
+</Project>
