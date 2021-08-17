@@ -95,6 +95,11 @@ namespace SDF
             // Resource management
             virtual void releaseResources() = 0;
 
+            void setCustomTileBinding(CString _binding) { tileBinding = _binding; }
+
+        protected:
+            CString tileBinding = "N/A";
+
         protected:
             // Throughput
             double analyzeThroughputApplication();

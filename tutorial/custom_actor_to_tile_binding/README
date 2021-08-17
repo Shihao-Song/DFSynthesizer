@@ -1,0 +1,11 @@
+See line 9 in sdf3.opt
+
+Example (1)
+0 0 1 2 3 4 5 7  
+    Map actor 0,1,2,3,4,5,7 to tile 0
+
+Example (2)
+0 0 1 2 3
+1 4 5 7
+    Map 0,1,2,3 to tile 0
+    Map 4,5,7 to tile 1

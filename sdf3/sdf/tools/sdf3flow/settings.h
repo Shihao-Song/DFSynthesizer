@@ -61,6 +61,8 @@ namespace SDF
             // Output stream
             void initOutputStream();
 
+            CString tileBinding = "N/A";
+
         private:
             // Parsing of settings
             void parseArguments(CStrings args);

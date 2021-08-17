@@ -203,6 +203,7 @@ namespace SDF
                     break;
 
                 case FlowBindSDFGtoTile:
+                    useCustomTileBinding();
                     bindSDFGtoTiles();
                     break;
 
@@ -212,6 +213,7 @@ namespace SDF
 
                 case FlowAllocateTDMAtimeSlices:
                     allocateTDMAtimeSlices();
+                    exit(0);
                     break;
 
                 case FlowOptimizeStorageSpaceAllocations:

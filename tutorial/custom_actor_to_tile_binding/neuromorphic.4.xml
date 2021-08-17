@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+  Architecture Graph Generator (v1.0)
+
+  Settings:
+    type:   mesh
+    X:      2
+    Y:      2
+-->
+<sdf3 type='sdf' version='1.0'
+     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+      xsi:noNamespaceSchemaLocation='http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd'>
+  <architectureGraph name='random_graph'>
+    <tile name='tile_0'>
+      <processor name='proc' type='crossbar'>
+        <arbitration type='TDMA' wheelsize='8'/>
+      </processor>
+      <memory name='mem' size='1048576'/>
+      <networkInterface name='ni' nrConnections='8' inBandwidth='96' outBandwidth='96'/>
+    </tile>
+    <tile name='tile_1'>
+      <processor name='proc' type='crossbar'>
+        <arbitration type='TDMA' wheelsize='8'/>
+      </processor>
+      <memory name='mem' size='1048576'/>
+      <networkInterface name='ni' nrConnections='8' inBandwidth='96' outBandwidth='96'/>
+    </tile>
+    <tile name='tile_2'>
+      <processor name='proc' type='crossbar'>
+        <arbitration type='TDMA' wheelsize='8'/>
+      </processor>
+      <memory name='mem' size='1048576'/>
+      <networkInterface name='ni' nrConnections='8' inBandwidth='96' outBandwidth='96'/>
+    </tile>
+    <tile name='tile_3'>
+      <processor name='proc' type='crossbar'>
+        <arbitration type='TDMA' wheelsize='8'/>
+      </processor>
+      <memory name='mem' size='1048576'/>
+      <networkInterface name='ni' nrConnections='8' inBandwidth='96' outBandwidth='96'/>
+    </tile>
+    <connection name='con_0' srcTile='tile_0' dstTile='tile_1' delay='3'/>
+    <connection name='con_1' srcTile='tile_0' dstTile='tile_2' delay='3'/>
+    <connection name='con_2' srcTile='tile_0' dstTile='tile_3' delay='4'/>
+    <connection name='con_3' srcTile='tile_1' dstTile='tile_0' delay='3'/>
+    <connection name='con_4' srcTile='tile_1' dstTile='tile_2' delay='4'/>
+    <connection name='con_5' srcTile='tile_1' dstTile='tile_3' delay='3'/>
+    <connection name='con_6' srcTile='tile_2' dstTile='tile_0' delay='3'/>
+    <connection name='con_7' srcTile='tile_2' dstTile='tile_1' delay='4'/>
+    <connection name='con_8' srcTile='tile_2' dstTile='tile_3' delay='3'/>
+    <connection name='con_9' srcTile='tile_3' dstTile='tile_0' delay='4'/>
+    <connection name='con_10' srcTile='tile_3' dstTile='tile_1' delay='3'/>
+    <connection name='con_11' srcTile='tile_3' dstTile='tile_2' delay='3'/>
+    <network slotTableSize='8192' packetHeaderSize='1024' flitSize='1024' reconfigurationTimeNI='10'>
+      <router name='r0'/>
+      <router name='r1'/>
+      <router name='r2'/>
+      <router name='r3'/>
+      <link name='l0' src='tile_0' dst='r0'/>
+      <link name='l1' src='r0' dst='tile_0'/>
+      <link name='l2' src='tile_1' dst='r1'/>
+      <link name='l3' src='r1' dst='tile_1'/>
+      <link name='l4' src='tile_2' dst='r2'/>
+      <link name='l5' src='r2' dst='tile_2'/>
+      <link name='l6' src='tile_3' dst='r3'/>
+      <link name='l7' src='r3' dst='tile_3'/>
+      <link name='l8' src='r0' dst='r2'/>
+      <link name='l9' src='r0' dst='r1'/>
+      <link name='l10' src='r1' dst='r3'/>
+      <link name='l11' src='r1' dst='r0'/>
+      <link name='l12' src='r2' dst='r0'/>
+      <link name='l13' src='r2' dst='r3'/>
+      <link name='l14' src='r3' dst='r1'/>
+      <link name='l15' src='r3' dst='r2'/>
+    </network>
+  </architectureGraph>
+</sdf3>

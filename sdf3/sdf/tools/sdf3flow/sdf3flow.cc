@@ -110,6 +110,11 @@ namespace SDF
         flow = new SDF3Flow(settings.flowType, xmlAppGraph, xmlArchGraph,
                             xmlSystemUsage);
 
+        if (settings.tileBinding != "N/A")
+        {
+            flow->setCustomTileBinding(settings.tileBinding);
+        }
+
         // Run flow step-by-step?
         if (settings.stepFlag)
             flow->setStepMode(true);

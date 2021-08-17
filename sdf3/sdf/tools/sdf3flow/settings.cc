@@ -274,6 +274,15 @@ namespace SDF
         file = CGetAttribute(archGraphNode, "file");
         xmlArchGraph = loadArchitectureGraphFromFile(file);
 
+        // Custom tile binding
+        CNode *tileBindingNode = CGetChildNode(settingsNode, "TileBinding");
+        if (tileBindingNode != NULL)
+        {
+            tileBinding = CGetAttribute(tileBindingNode, "file");
+            // std::cerr << "[Hacking] Tile binding file: " << tileBinding << std::endl;
+            delete tileBindingNode;
+        }
+
         // System usage information
         systemUsageNode =  CGetChildNode(settingsNode, "systemUsage");
         if (systemUsageNode != NULL)

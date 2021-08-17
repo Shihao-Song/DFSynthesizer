@@ -36,6 +36,11 @@
 #include "flow.h"
 namespace SDF
 {
+    void SDF3Flow::useCustomTileBinding()
+    {
+        tileMapping->setCustomTileBinding(tileBinding);
+    }
+
     /**
      * bindSDFGtoTiles ()
      * Bind actor and channels of the SDFG to the tile resources.

@@ -37,6 +37,11 @@
 #include "loadbalance.h"
 #include "../../base/algo/cycle.h"
 #include "../scheduling/scheduling.h"
+
+#include <unordered_map>
+#include <fstream>
+#include <sstream>
+
 namespace SDF
 {
 
@@ -1437,6 +1442,103 @@ namespace SDF
             actorIter++;
         }
 
+        // The mapping is successful now
+        // Prepare for the printout
+        std::map<std::string, std::vector<std::string>> str_tile_actor_map;
+        for (SDFactorsIter iter = appGraph->actorsBegin();
+             iter != appGraph->actorsEnd(); iter++)
+        {
+            TimedSDFactor *a = (TimedSDFactor *)(*iter);
+            Tile *t = actorTileBinding[a->getId()];
+
+            auto map_iter = str_tile_actor_map.find(t->getName());
+
+            if (map_iter != str_tile_actor_map.end())
+            {
+                map_iter->second.push_back(a->getName());
+            }
+            else
+            {
+                std::vector<std::string> actors = {a->getName()};
+                str_tile_actor_map.insert({t->getName(), actors});
+            }
+        }
+
+        std::cerr << "[DFSynthesizer] Original actor-tile mapping. " << std::endl;
+        for (auto iter = str_tile_actor_map.begin(); 
+                 iter != str_tile_actor_map.end();
+                 iter++)
+        {
+            std::cerr << "[DFSynthesizer] Tile " << iter->first << ": ";
+            for (auto act : iter->second)
+            {
+                std::cerr << act << " ";
+            }
+            std::cerr << std::endl;
+        }
+
+        if (tileBinding == "N/A") return true;
+        releaseResources();
+        std::cerr << "[DFSynthesizer] Custom actor-tile mapping." << std::endl;
+
+        std::unordered_map<std::string, std::string> actor_to_tile;
+        std::ifstream binding_file(tileBinding);
+        assert(binding_file.good());
+        std::string line;
+        getline(binding_file, line);
+        while (!binding_file.eof())
+        {
+            // std::cerr << line << std::endl;
+            std::stringstream line_stream(line);
+            std::vector<std::string> tokens;
+            std::string intermidiate;
+            while (getline(line_stream, intermidiate, ' '))
+            {
+                tokens.push_back(intermidiate);
+            }
+            assert(tokens.size());
+
+            std::cerr << "[DFSynthesizer] Tile " << "tile_" << tokens[0] << ": ";
+            // Build binding table
+            std::string tile = "tile_" + tokens[0];
+            for (unsigned i = 1; i < tokens.size(); i++)
+            {
+                std::cerr << "actor_" << tokens[i] << " ";
+                std::string actor = "actor_" + tokens[i];
+                actor_to_tile[actor] = tile;
+            }
+            std::cerr << std::endl;
+
+            getline(binding_file, line);
+        }
+        // for (auto [k, v] : actor_to_tile) { std::cerr << k << " : " << v << std::endl; }
+        // exit(0);
+        actors = appGraph->getActors();
+        actorIter = actors.begin();
+        while (actorIter != actors.end())
+        {
+            TimedSDFactor *a = (TimedSDFactor *)(*actorIter);
+            std::string tile_to_be_mapped = actor_to_tile[a->getName()];
+
+            Tiles tiles = archGraph->getTiles();
+            for (TilesIter tileIter = tiles.begin();
+                 tileIter != tiles.end(); tileIter++)
+            {
+                Tile *t = *tileIter;
+
+                if (t->getName() == tile_to_be_mapped)
+                {
+                    if (!allocateResources(a, t))
+                    {
+                        std::cerr << "[INFO] Allocation failed." << std::endl;
+                        exit(0);
+                    }
+                }
+            }
+
+            actorIter++;
+        }
+
         return true;
     }
 
@@ -2433,6 +2535,7 @@ namespace SDF
         }
 #endif
 
+/*
 #ifdef VERBOSE
         cerr << "[INFO] Optimize binding" << endl;
 #endif
@@ -2452,7 +2555,7 @@ namespace SDF
             cerr << (100 * tileLoad[i] / max) << "%" << endl;
         }
 #endif
-
+*/
         return true;
     }
 

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<sdf3 type='sdf' version='1.0'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd'>
+    <architectureGraph name="arch">
+        <tile name="tile_a">
+            <processor name="arm1" type="arm">
+                <arbitration type="TDMA" wheelsize="100000"/>
+            </processor>
+            <memory name="mem" size="10000000"/>
+            <networkInterface name="ni" nrConnections="10" inBandwidth="96" outBandwidth="96"/>
+        </tile>
+        <tile name="tile_b">
+            <processor name="arm2" type="arm">
+                <arbitration type="TDMA" wheelsize="100000"/>
+            </processor>
+            <memory name="mem" size="10000000"/>
+            <networkInterface name="ni" nrConnections="10" inBandwidth="96" outBandwidth="96"/>
+        </tile>
+        <tile name="tile_c">
+            <processor name="proc" type="encoder">
+                <arbitration type="TDMA" wheelsize="100000"/>
+            </processor>
+            <memory name="mem" size="10000000"/>
+            <networkInterface name="ni" nrConnections="10" inBandwidth="96" outBandwidth="96"/>
+        </tile>
+        <tile name="tile_d">
+            <processor name="proc" type="motion">
+                <arbitration type="TDMA" wheelsize="100000"/>
+            </processor>
+            <memory name="mem" size="10000000"/>
+            <networkInterface name="ni" nrConnections="10" inBandwidth="96" outBandwidth="96"/>
+        </tile>
+        <tile name="tile_e">
+            <processor name="proc" type="subbinv">
+                <arbitration type="TDMA" wheelsize="100000"/>
+            </processor>
+            <memory name="mem" size="10000000"/>
+            <networkInterface name="ni" nrConnections="10" inBandwidth="96" outBandwidth="96"/>
+        </tile>
+        
+        <connection name="con_1"   srcTile="tile_a" dstTile="tile_b" delay="3"/>
+        <connection name="con_2"   srcTile="tile_a" dstTile="tile_c" delay="3"/>
+        <connection name="con_3"   srcTile="tile_a" dstTile="tile_d" delay="4"/>
+        <connection name="con_3"   srcTile="tile_a" dstTile="tile_e" delay="4"/>
+        <connection name="con_4"   srcTile="tile_b" dstTile="tile_a" delay="3"/>
+        <connection name="con_5"   srcTile="tile_b" dstTile="tile_c" delay="4"/>
+        <connection name="con_6"   srcTile="tile_b" dstTile="tile_d" delay="3"/>
+        <connection name="con_6"   srcTile="tile_b" dstTile="tile_e" delay="3"/>
+        <connection name="con_7"   srcTile="tile_c" dstTile="tile_a" delay="3"/>
+        <connection name="con_8"   srcTile="tile_c" dstTile="tile_b" delay="4"/>
+        <connection name="con_9"   srcTile="tile_c" dstTile="tile_d" delay="3"/>
+        <connection name="con_9"   srcTile="tile_c" dstTile="tile_e" delay="3"/>
+        <connection name="con_10"  srcTile="tile_d" dstTile="tile_a" delay="4"/>
+        <connection name="con_11"  srcTile="tile_d" dstTile="tile_b" delay="3"/>
+        <connection name="con_12"  srcTile="tile_d" dstTile="tile_c" delay="3"/>
+        <connection name="con_12"  srcTile="tile_d" dstTile="tile_e" delay="3"/>
+        <connection name="con_13"  srcTile="tile_e" dstTile="tile_a" delay="4"/>
+        <connection name="con_14"  srcTile="tile_e" dstTile="tile_b" delay="3"/>
+        <connection name="con_15"  srcTile="tile_e" dstTile="tile_c" delay="3"/>
+        <connection name="con_16"  srcTile="tile_e" dstTile="tile_d" delay="3"/>
+
+        <network slotTableSize='8' packetHeaderSize='32' flitSize='96' reconfigurationTimeNI='32'>
+            <router name='router_1'/>
+            <router name='router_2'/>
+            <router name='router_3'/>
+            <router name='router_4'/>
+            <link name='link1a' src='tile_a' dst='router_1'/>
+            <link name='link1b' src='router_1' dst='tile_a'/>
+            <link name='link2a' src='router_1' dst='router_2'/>
+            <link name='link2b' src='router_2' dst='router_1'/>
+            <link name='link3a' src='tile_b' dst='router_2'/>
+            <link name='link3b' src='router_2' dst='tile_b'/>         
+            <link name='link4a' src='router_1' dst='router_3'/>
+            <link name='link4b' src='router_3' dst='router_1'/>
+            <link name='link5a' src='router_2' dst='router_4'/>
+            <link name='link5b' src='router_4' dst='router_2'/>
+            <link name='link6a' src='tile_c' dst='router_3'/>
+            <link name='link6b' src='router_3' dst='tile_c'/>         
+            <link name='link7a' src='router_3' dst='router_4'/>
+            <link name='link7b' src='router_4' dst='router_3'/>
+            <link name='link8a' src='tile_d' dst='router_4'/>
+            <link name='link8b' src='router_4' dst='tile_d'/>
+            <link name='link9a' src='tile_e' dst='router_4'/>
+            <link name='link9b' src='router_4' dst='tile_e'/>
+        </network>
+   </architectureGraph>
+</sdf3>

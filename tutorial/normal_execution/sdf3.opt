@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sdf3 type='sdf' version='1.0'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='http://www.es.ele.tue.nl/sdf3/xsd/sdf3-sdf.xsd'>
+  <settings type='flow'>
+    <applicationGraph file='h263encoder.xml'/>
+    <!-- <applicationGraph file='h263decoder.xml'/> -->
+    <!-- <applicationGraph file='mp3decoder.xml'/> -->
+    <architectureGraph file='arch.xml'/>
+    <tileMapping algo='loadbalance'>
+      <constants>
+        <constant name='a' value='1.0'/> <!-- processing -->
+        <constant name='b' value='0.0'/> <!-- memory -->
+        <constant name='f' value='0.0'/> <!-- communication -->
+        <constant name='g' value='0.0'/> <!-- latency -->
+      </constants>
+    </tileMapping>
+    <nocMapping algo='greedy'>
+      <constraints>
+          <maxDetour d='10'/>
+          <maxNrRipups n='10'/>
+          <maxNrTries n='0'/>
+      </constraints>
+    </nocMapping>
+  </settings>
+</sdf3>
+
+
